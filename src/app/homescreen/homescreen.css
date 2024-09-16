@@ -1,6 +1,16 @@
 @font-face {
-    font-family: '98css';
-    src: url('/node_modules/98.css/');
+    font-family: 'MyWebFont';
+    src: url('/fonts/Windows98Font.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/Windows98Font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/Windows98Font.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/Windows98Font.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/fonts/Windows98Font.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/Windows98Font.svg') format('svg'); /* Legacy iOS */
+  
+  }
+
+body{
+    font-family:  'MyWebFont', Fallback, sans-serif;
 }
 
 #HomescreenBase{
@@ -8,13 +18,94 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#FileExplorer-App{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    border-left: rgb(255, 251, 251) solid 0.2vw;
+    border-top: rgb(255, 255, 255) solid 0.2vw;
+    border-right:rgb(0, 0, 0) solid 0.2vw;
+    border-bottom:rgb(0, 0, 0) solid 0.2vw;
+    outline: solid rgb(197, 197, 197) 0.5vh;
+}
+
+#top-bar{
+    background-color: blue;
+    align-items: center;
+    display: flex;
+    color: white;
+    height: 7.5%;
+}
+#Exploring-top-bar{
+    float: left;
+    width: 74%;
+    margin-left: 1%;
+}
+#button-holder-top-bar{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 25%;
+    height: 100%;
+}
+
+.topbar-bnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    width: 15%;
+    border: none;
+    height: 85%;
+    float: right;
+    border-left: rgb(255, 251, 251) solid 0.1vw;
+    border-top: rgb(255, 255, 255) solid 0.1vw;
+    border-right:rgb(0, 0, 0) solid 0.1vw;
+    border-bottom:rgb(0, 0, 0) solid 0.1vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .Icon-img{
     width: auto;
-    min-width: 50%;
-    max-width: 50%;
+    min-width: 45%;
+    max-width: 45%;
     height: auto;
     min-height: 50%;
     max-height: 50%;
@@ -24,11 +115,9 @@
 }
 
 .Icon-text{
-    color: white;
-    font-size: 115%;
-    font-weight: bold;
-    -webkit-text-stroke: 0.5px rgb(100, 100, 100);
-    font-family: "Tahoma", "Verdana", "Arial", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+    font-family:  'MyWebFont', Fallback, sans-serif;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -157,6 +246,7 @@
   border-left:rgb(156, 154, 154) solid 0.15vw;
   aspect-ratio: 16 / 9;
 }
+
 .siderbar2{
     height: 50%;
     width: 0.05vw;
@@ -175,7 +265,6 @@
     align-items: center;
     justify-content: center;
     width: 60%;
-    
     float: left;
     aspect-ratio: 1 / 1;
 }
@@ -187,7 +276,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     font-weight: bolder;
     font-family:  'MyWebFont', Fallback, sans-serif;
     aspect-ratio: 1 / 1;
@@ -210,7 +299,6 @@
  min-width: 18%;
  max-width: 18%;
  margin-left: 5%;
- 
  aspect-ratio: 1 / 1;
  float: left;
 }
@@ -241,7 +329,11 @@
 
 
 
-
+#sidebarRight{
+    position: absolute;
+    right: 0;
+    margin-right: 16.25%;
+}
 
 
 #FakeTime{
@@ -251,13 +343,13 @@
     padding-right: 3px;
     right:0;
     height: 70%;
-    width: auto;
+    width: 15%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 0.1%;
-    font-size: 1vw;
+    font-size: 1.25vw;
     font-weight: bolder;
     font-family:  'MyWebFont', Fallback, sans-serif;
     border-left: rgb(156, 154, 154) solid 0.2vw;
@@ -265,3 +357,66 @@
     border-right:rgb(255, 255, 255) solid 0.2vw;
     border-bottom:rgb(255, 255, 255) solid 0.2vw;
 }
+
+
+
+
+
+
+
+
+
+#OpenApps{
+    width: 15%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5%;
+}
+#fileExplorer{
+    border-left: rgb(0, 0, 0) solid 0.2vw;
+    border-top: rgb(0, 0, 0) solid 0.2vw;
+    border-right:rgb(255, 255, 255) solid 0.2vw;
+    border-bottom:rgb(255, 255, 255) solid 0.2vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, transparent 50%, #cfcfcf 50%),
+    linear-gradient(to right, #f3f3f3 50%, #c4c4c4 50%);
+    background-size: 3px 3px, 3px 3px;
+    box-shadow: 0.5px 1px #888888;
+    user-select: none;
+}
+#fileExplorer-icon{
+    float: left;
+    background-image: url("/src/assets/icons/directory_explorer-5.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: auto;
+    min-width: 12%;
+    max-width: 12%;
+    margin-right: 5%;
+    margin-left: 2%;
+    aspect-ratio: 1 / 1;
+    
+}
+#fileExplorer-text{
+    font-weight: bolder;
+    font-family:  'MyWebFont', Fallback, sans-serif;
+    font-size: 1.25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

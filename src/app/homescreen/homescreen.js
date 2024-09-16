@@ -1,5 +1,5 @@
 import './homescreen.css'
-import "98.css"
+
 
 function Homescreen (){
     return(
@@ -65,18 +65,23 @@ function Homescreen (){
                 
 
                 <div id='OpenApps'>
-                    <div></div>
+                    <div id="fileExplorer">
+                       <div id='fileExplorer-icon'></div>
+                       <div id='fileExplorer-text'>Exploring - MyComputer</div>
+                    </div>
                 </div>
+                
+
                 
                
 
 
 
+                <div class="siderbar1" id="sidebarRight"></div>
                <div id='FakeTime'>
                 Made By Ben Worrall
 
                </div>
-               
             </div>
 
 
@@ -86,7 +91,21 @@ function Homescreen (){
 
 
 
+            <div id='FileExplorer-App'>
+                <div id='top-bar'>
+                    <div id='Exploring-top-bar'>Exploring -</div>
 
+                    <div id='button-holder-top-bar'>
+                        <button id='minimize-bnt' class="topbar-bnt">🗕</button>
+                        <button id='maximize-bnt' class="topbar-bnt">🗖</button>
+                        <button id='exit-bnt' class="topbar-bnt">✖</button>
+                    </div>
+                   
+                </div>
+
+
+
+            </div>
 
 
 
