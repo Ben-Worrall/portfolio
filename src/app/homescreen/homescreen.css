@@ -11,6 +11,7 @@
 
 body{
     font-family:  'MyWebFont', Fallback, sans-serif;
+    overflow: hidden;
 }
 
 #HomescreenBase{
@@ -54,6 +55,7 @@ body{
     display: flex;
     color: white;
     height: 7.5%;
+    user-select: none;
 }
 #Exploring-top-bar{
     float: left;
