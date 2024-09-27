@@ -1,7 +1,7 @@
 import './homescreen.css'
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-
+import FileExplorer from '../fileExplorer/fileExplorer';
 
 
 function Homescreen (){
@@ -391,6 +391,10 @@ document.ontouchstart = filter;
                         <button id='exit-bnt' className="topbar-bnt">✖</button>
                     </div>
                    
+                </div>
+                <div id="app-body">
+                  {FileExplorer()}
+                 
                 </div>
 
 

@@ -42,11 +42,13 @@ body{
     position: absolute;
     left: 25%;
     top: 25%;
-    border-left: rgb(255, 251, 251) solid 0.2vw;
-    border-top: rgb(255, 255, 255) solid 0.2vw;
+    border-left: rgb(0, 0, 0) solid 0.2vw;
+    border-top: rgb(0, 0, 0) solid 0.2vw;
     border-right:rgb(0, 0, 0) solid 0.2vw;
     border-bottom:rgb(0, 0, 0) solid 0.2vw;
-    outline: solid rgb(197, 197, 197) 0.5vh;
+    outline: solid rgb(192, 192, 192) 0.5vh;
+    align-items: center;
+    
 }
 
 #top-bar{
@@ -56,11 +58,13 @@ body{
     color: white;
     height: 7.5%;
     user-select: none;
+    width: 100%;
 }
 #Exploring-top-bar{
     float: left;
     width: 74%;
     margin-left: 1%;
+    font-size: 1vw;
 }
 #button-holder-top-bar{
     float: right;
@@ -88,7 +92,10 @@ body{
     font-weight: bold;
     font-size: 2vh;
 }
-
+#app-body{
+    height: 91.5%;
+    width: 100%;
+}
 
 
 
