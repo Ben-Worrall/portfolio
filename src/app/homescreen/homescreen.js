@@ -110,7 +110,7 @@ document.ontouchstart = filter;
 //-------------------------------------------------------------------------------------//
          //top resize
         if(mouseY >= targetTop - 5 && mouseY <= targetTop + 5){
-
+          if(e.clientX > targetLeft && e.clientX < targetRight){
           document.body.style.cursor = "n-resize"
 
           document.onmousedown = function(e){
@@ -129,15 +129,17 @@ document.ontouchstart = filter;
       
                   //drag down
               } else if(e.clientY > targetTop){
+                
                   document.body.style.cursor = "n-resize"
                   target.style.top = e.clientY+ "px"
                   target.style.height = (targetHeight) - (e.clientY - targetTop) + "px"
-                  
+                
               }
       
               document.body.style.cursor = "n-resize"
       
               console.log('Top Level drag')
+              }
             }
 
           }
@@ -149,6 +151,7 @@ document.ontouchstart = filter;
 //-------------------------------------------------------------------------------------//
           //bottom resize
         }else if(mouseY >= targetBottom - 5 && mouseY <= targetBottom + 5){
+          if(e.clientX > targetLeft && e.clientX < targetRight){
           document.body.style.cursor = "n-resize"
           document.onmousedown = function(e){
             
@@ -170,8 +173,9 @@ document.ontouchstart = filter;
                 target.style.bottom = e.clientY+ "px"
                 target.style.height = (targetHeight) + (e.clientY - targetBottom) + "px"
                 
+              }
             }
-            }
+          }
           }
           document.onmouseup = function(){
             document.onmousemove = function(e){}
