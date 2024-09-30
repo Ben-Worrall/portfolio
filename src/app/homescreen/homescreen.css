@@ -36,12 +36,12 @@ body{
 
 
 #FileExplorer-App{
-    width: 50%;
-    height: 50%;
+    width: 80%;
+    height: 80%;
     background-color: white;
     position: absolute;
-    left: 25%;
-    top: 25%;
+    left: 10%;
+    top: 10%;
     border-left: rgb(0, 0, 0) solid 0.2vw;
     border-top: rgb(0, 0, 0) solid 0.2vw;
     border-right:rgb(0, 0, 0) solid 0.2vw;
@@ -64,7 +64,8 @@ body{
     float: left;
     width: 74%;
     margin-left: 1%;
-    font-size: 1vw;
+    font-size: 2vw;
+    
 }
 #button-holder-top-bar{
     float: right;
@@ -97,7 +98,17 @@ body{
     width: 100%;
 }
 
-
+#FileExplorer-icon{
+    background-image: url("/src/assets/icons/directory_explorer-5.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3.5%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
 
 
 

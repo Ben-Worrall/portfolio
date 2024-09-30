@@ -387,6 +387,7 @@ document.ontouchstart = filter;
 
             <div id='FileExplorer-App' >
                 <div id='top-bar'>
+                    <div id='FileExplorer-icon'></div>
                     <div id='Exploring-top-bar'>Exploring -</div>
 
                     <div id='button-holder-top-bar'>
