@@ -52,7 +52,7 @@ body{
 }
 
 #top-bar{
-    background-color: blue;
+    background-color: rgb(0, 0, 168);
     align-items: center;
     display: flex;
     color: white;

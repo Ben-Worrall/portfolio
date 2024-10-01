@@ -48,6 +48,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 #leftPanel{
     background-color: rgb(202, 202, 202);
     width: 35%;
@@ -55,12 +64,151 @@
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     margin-left: 0.5%;
-    outline: 0.1vw solid grey;
+    
     float: left;
     bottom: 0;
     outline: 0.1vw solid white;
-    box-shadow: 0px 0px 2px 1px #000000;
+    box-shadow: 0px 0px 2px 1.5px #000000;
 }
+#LeftPanel-Header{
+    height: 7.5%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.3vw;
+    border-bottom: 0.2vw solid grey;
+    align-items: center;
+    display: flex;
+}
+#LeftPanel-Body{
+    height: 92%;
+    width: 100%;
+    background-color: white;
+}
+#LeftPanel-Body-Header{
+    width: 100%;
+    height: 7.5%;
+    display: flex;
+    align-items: center;
+}
+#LeftPanel-Desktop-holder{
+    height: 90%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    
+}
+#LeftPanel-Desktop-icon{
+    background-image: url("/src/assets/icons/desktop_old-2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 90%;
+    width: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+}
+#LeftPanel-Desktop-text{
+      font-weight: bold;
+      letter-spacing:0.05vh;
+      font-size: 1.25vw;
+      float: right;
+      margin-right: 5%;
+}
+
+
+
+
+
+
+
+#leftPanel-Body-FirstLayer{
+    width: 99%;
+    margin-left: 1%;
+    height: 90%;
+}
+
+
+#LeftPanel-FirstLayer-minimize{
+    background-image: url("/src/assets/icons/minimize.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 7.5%;
+    height: 7.5%;
+    float: left;
+}
+
+#LeftPanel-FirstLayer-BenW-holder{
+    float: left;
+    width: 20%;
+    height: 7.5%;
+    display: flex;
+    align-items: center;
+}
+#LeftPanel-FirstLayer-BenW-icon{
+    background-image: url("/src/assets/icons/computer_explorer-4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    height: 80%;
+    margin-right: 5%;
+}
+#LeftPanel-FirstLayer-BenW-text{
+    height: 7.5%;
+    width: 7.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+#LeftPanel-Body-SecondLayer{
+    float: left;
+    width: 99%;
+    height: 8%;
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+
+}
+#LeftPanel-SecondLayer-minimize{
+    background-image: url("/src/assets/icons/minimize.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 8%;
+    margin-left: 6.5%;
+    height: 100%;
+    float: left;
+}
+#LeftPanel-SecondLayer-Portfolio-holder{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#LeftPanel-SecondLayer-Portfolio-icon{
+    background-image: url("/src/assets/icons/hard_disk_drive-2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 25%;
+    height: 80%;
+    float: left;
+    margin-right: 3%;
+    margin-left: 1%;
+    float: left;
+}
+#LeftPanel-SecondLayer-Portfolio-text{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    
+}
+
+
 
 
 
