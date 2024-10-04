@@ -221,61 +221,129 @@
 #LeftPanel-Body-ThirdLayer{
    float: left;
    height: 70%;
-   margin-left: 16%;
-   width: 83%;
+   width: 80%;
+   
 }
-#LeftPanel-ThirdLayer-minimize1{
+
+
+
+
+
+#LeftPanel-Body-ThirdLayer-1{
+    width: 100%;
+    height: 10%;
+}
+#LeftPanel-Body-ThirdLayer-2{
+    width: 100%;
+    height: 10%;
+}
+#LeftPanel-Body-ThirdLayer-3{
+    width: 100%;
+    height: 10%;
+}
+
+.LeftPanel-ThirdLayer-Expand-image{
     background-image: url("/src/assets/icons/Expand.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 10%;
-    height: 10%;
+    height: 100%;
     float: left;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-left: 20%;
 }
-#LeftPanel-ThirdLayer-minimize2{
-    background-image: url("/src/assets/icons/Expand.png");
+.LeftPanel-ThirdLayer-Minimize-image{
+    background-image: url("/src/assets/icons/minimize.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 10%;
-    height: 10%;
+    height: 100%;
     float: left;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-left: 20%;
 }
 #LeftPanel-ThirdLayer-minimize3{
     background-image: url("/src/assets/icons/normal.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 10%;
-    height: 10%;
+    height: 100%;
     float: left;
     display: flex;
     align-items: center;
-    margin: 0;
+    margin-left: 20%;
 }
+
+
+
+
+
 #LeftPanel-Body-ThirdLayer-Certifications-holder{
-    width: 89%;
-    float: right;
-    height: 10%;
+    width: 35%;
+    float: left;
+    height: 100%;
     display: flex;
     align-items: center;
+    margin-left: 1%;
 }
+#LeftPanel-Body-ThirdLayer-Projects-holder{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+#LeftPanel-Body-ThirdLayer-AboutMe-holder{
+    width: 35%;
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 1%;
+}
+
+
+
+
+
 #LeftPanel-Body-ThirdLayer-Certifications-icon{
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 7.5%;
+    width: 15%;
     height: 70%;
     display: flex;
     align-items: center;
-    margin-right: 2%;
+    margin-right: 4%;
     float: left;
     margin-top: 1%;
 }
+#LeftPanel-Body-ThirdLayer-Projects-icon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 15%;
+    height: 70%;
+    float: left;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+#LeftPanel-Body-ThirdLayer-AboutMe-icon{
+    background-image: url("/src/assets/icons/document-0.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 15%;
+    height: 70%;
+    float: left;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+
+
+
 #LeftPanel-Body-ThirdLayer-Certifications-text{
     display: flex;
     align-items: center;
@@ -283,48 +351,11 @@
     font-weight: bold;
     margin-top: 1%;
 }
-
-#LeftPanel-Body-ThirdLayer-Projects-holder{
-    width: 89%;
-    float: right;
-    height: 10%;
-    display: flex;
-    align-items: center;
-    
-}
-#LeftPanel-Body-ThirdLayer-Projects-icon{
-    background-image: url("/src/assets/icons/folder-img.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 7.5%;
-    height: 70%;
-    float: left;
-    margin-right: 2%;
-    margin-top: 1%;
-}
 #LeftPanel-Body-ThirdLayer-Projects-text{
     display: flex;
     align-items: center;
     text-align: center;
     font-weight: bold;
-    margin-top: 1%;
-}
-
-#LeftPanel-Body-ThirdLayer-AboutMe-holder{
-    width: 89%;
-    float: right;
-    display: flex;
-    align-items: center;
-    height: 10%;
-}
-#LeftPanel-Body-ThirdLayer-AboutMe-icon{
-    background-image: url("/src/assets/icons/document-0.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 7.5%;
-    height: 70%;
-    float: left;
-    margin-right: 2%;
     margin-top: 1%;
 }
 #LeftPanel-Body-ThirdLayer-AboutMe-text{

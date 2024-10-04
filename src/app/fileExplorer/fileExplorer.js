@@ -7,9 +7,27 @@ import ReactDOM from "react-dom/client";
 
 const FileExplorer = () => {
 
+
+
+    //when clicking on elements to expand or minimize
+    const [backgroundClass1, setBackgroundClass1] = useState('LeftPanel-ThirdLayer-Expand-image');
+    const [backgroundClass2, setBackgroundClass2] = useState('LeftPanel-ThirdLayer-Expand-image');
+    const [backgroundClass3, setBackgroundClass3] = useState('LeftPanel-ThirdLayer-Expand-image');
+
+  const changeBackground1 = () => {
+    setBackgroundClass1(backgroundClass1 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');
+  };
+  const changeBackground2 = () => {
+    setBackgroundClass2(backgroundClass2 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');
+  };
+  const changeBackground3 = () => {
+    setBackgroundClass3(backgroundClass3 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');
+  };
+    
+
     useEffect(() => {
 
-
+       
 
     //EXPAND selected, LEFT PANEL
 
@@ -179,6 +197,8 @@ const FileExplorer = () => {
     })
 
 
+
+
     //THIRD LAYER
 
 
@@ -190,12 +210,14 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-Body-ThirdLayer-Certifications-holder').style.outline = '0.2vw solid black '
         document.getElementById('LeftPanel-Body-ThirdLayer-Certifications-holder').style.outlineStyle = 'dotted'
 
-        //show expanded elements
-        //document.getElementById('LeftPanel-Body-ThirdLayer').style.display = ""
-
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Certifications"
     })
+    //minimize or expand
+    document.getElementById('LeftPanel-ThirdLayer-minimize1').onclick = function(e){
+        e.preventDefault(); 
+        changeBackground1()
+    }
 
 
     //Projects (third layer)
@@ -206,12 +228,16 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-Body-ThirdLayer-Projects-holder').style.outline = '0.2vw solid black '
         document.getElementById('LeftPanel-Body-ThirdLayer-Projects-holder').style.outlineStyle = 'dotted'
 
-        //show expanded elements
-        //document.getElementById('LeftPanel-Body-ThirdLayer').style.display = ""
-
         //change exploring text
-        document.getElementById('Exploring-top-bar').innerText = "Exploring - Portfolio (c:)"
+        document.getElementById('Exploring-top-bar').innerText = "Exploring - Projects"
     })
+    //minimize or expand
+    document.getElementById('LeftPanel-ThirdLayer-minimize2').onclick = function(e){
+        e.preventDefault();
+        changeBackground2()
+        
+    }
+    
 
 
     //About me (third layer)
@@ -222,13 +248,10 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-Body-ThirdLayer-AboutMe-holder').style.outline = '0.2vw solid black '
         document.getElementById('LeftPanel-Body-ThirdLayer-AboutMe-holder').style.outlineStyle = 'dotted'
 
-        //show expanded elements
-        //document.getElementById('LeftPanel-Body-ThirdLayer').style.display = ""
-
         //change exploring text
-        document.getElementById('Exploring-top-bar').innerText = "Exploring - Portfolio (c:)"
+        document.getElementById('Exploring-top-bar').innerText = "Exploring - About Me.txt"
     })
-
+    
 
 
 
@@ -243,6 +266,7 @@ const FileExplorer = () => {
    document.getElementById('LeftPanel-FirstLayer-minimize').addEventListener('click', function(){
         document.getElementById('leftPanel-Body-FirstLayer').style.display = "none"
         document.getElementById('LeftPanel-Body-SecondLayer').style.display = "none"
+        document.getElementById('LeftPanel-Body-ThirdLayer').style.display = "none"
    })
 
    //MINIMIZE BenW
@@ -360,25 +384,34 @@ const FileExplorer = () => {
 
                     <div id='LeftPanel-Body-ThirdLayer'>
 
-                        <div id='LeftPanel-ThirdLayer-minimize1'></div>
-
-                        <div id='LeftPanel-Body-ThirdLayer-Certifications-holder'>
-                            <div id='LeftPanel-Body-ThirdLayer-Certifications-icon'></div>
-                            <div id='LeftPanel-Body-ThirdLayer-Certifications-text'>Certifications</div>
+                        <div id='LeftPanel-Body-ThirdLayer-1'>
+                            <div id='LeftPanel-ThirdLayer-minimize1' className={backgroundClass1}></div>
+    
+                            <div id='LeftPanel-Body-ThirdLayer-Certifications-holder'>
+                                <div id='LeftPanel-Body-ThirdLayer-Certifications-icon'></div>
+                                <div id='LeftPanel-Body-ThirdLayer-Certifications-text'>Certifications</div>
+                            </div>
                         </div>
 
-                        <div id='LeftPanel-ThirdLayer-minimize2'></div>
 
-                        <div id='LeftPanel-Body-ThirdLayer-Projects-holder'>
-                            <div id='LeftPanel-Body-ThirdLayer-Projects-icon'></div>
-                            <div id='LeftPanel-Body-ThirdLayer-Projects-text'>Projects</div>
+
+                        <div id='LeftPanel-Body-ThirdLayer-2'>
+                            <div id='LeftPanel-ThirdLayer-minimize2' className={backgroundClass2}></div>
+
+                            <div id='LeftPanel-Body-ThirdLayer-Projects-holder'>
+                                <div id='LeftPanel-Body-ThirdLayer-Projects-icon'></div>
+                                <div id='LeftPanel-Body-ThirdLayer-Projects-text'>Projects</div>
+                            </div>
                         </div>
 
-                        <div id='LeftPanel-ThirdLayer-minimize3'></div>
-                        
-                        <div id='LeftPanel-Body-ThirdLayer-AboutMe-holder'>
-                            <div id='LeftPanel-Body-ThirdLayer-AboutMe-icon'></div>
-                            <div id='LeftPanel-Body-ThirdLayer-AboutMe-text'>About Me</div>
+
+                        <div id='LeftPanel-Body-ThirdLayer-3'>
+                            <div id='LeftPanel-ThirdLayer-minimize3' ></div>
+                            
+                            <div id='LeftPanel-Body-ThirdLayer-AboutMe-holder'>
+                                <div id='LeftPanel-Body-ThirdLayer-AboutMe-icon'></div>
+                                <div id='LeftPanel-Body-ThirdLayer-AboutMe-text'>About Me</div>
+                            </div>
                         </div>
 
 
