@@ -1,4 +1,5 @@
-import './fileExplorer.css'
+import './fileExplorer-LeftPanel.css'
+import './fileExplorer-RightPanel.css'
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 
@@ -14,15 +15,25 @@ const FileExplorer = () => {
     const [backgroundClass2, setBackgroundClass2] = useState('LeftPanel-ThirdLayer-Expand-image');
     const [backgroundClass3, setBackgroundClass3] = useState('LeftPanel-ThirdLayer-Expand-image');
 
+    //for certifications
   const changeBackground1 = () => {
     setBackgroundClass1(backgroundClass1 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');
+    if(document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display !== ""){
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = ""
+    } else {
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = "none"
+    }
   };
+  //fopr projects
   const changeBackground2 = () => {
     setBackgroundClass2(backgroundClass2 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');
+    if(document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display !== ""){
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = ""
+    } else {
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = "none"
+    }
   };
-  const changeBackground3 = () => {
-    setBackgroundClass3(backgroundClass3 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');
-  };
+  
     
 
     useEffect(() => {
@@ -384,35 +395,105 @@ const FileExplorer = () => {
 
                     <div id='LeftPanel-Body-ThirdLayer'>
 
-                        <div id='LeftPanel-Body-ThirdLayer-1'>
-                            <div id='LeftPanel-ThirdLayer-minimize1' className={backgroundClass1}></div>
-    
-                            <div id='LeftPanel-Body-ThirdLayer-Certifications-holder'>
-                                <div id='LeftPanel-Body-ThirdLayer-Certifications-icon'></div>
-                                <div id='LeftPanel-Body-ThirdLayer-Certifications-text'>Certifications</div>
+                        
+                               {/* 3rd layer (Certifications)*/}
+                            <div id='LeftPanel-ThirdLayer-Certifications'>
+                                <div id='LeftPanel-ThirdLayer-minimize1' className={backgroundClass1}></div>
+        
+                                <div id='LeftPanel-Body-ThirdLayer-Certifications-holder'>
+                                    <div id='LeftPanel-Body-ThirdLayer-Certifications-icon'></div>
+                                    <div id='LeftPanel-Body-ThirdLayer-Certifications-text'>Certifications</div>
+                                </div>
                             </div>
-                        </div>
-
-
-
-                        <div id='LeftPanel-Body-ThirdLayer-2'>
-                            <div id='LeftPanel-ThirdLayer-minimize2' className={backgroundClass2}></div>
-
-                            <div id='LeftPanel-Body-ThirdLayer-Projects-holder'>
-                                <div id='LeftPanel-Body-ThirdLayer-Projects-icon'></div>
-                                <div id='LeftPanel-Body-ThirdLayer-Projects-text'>Projects</div>
-                            </div>
-                        </div>
-
-
-                        <div id='LeftPanel-Body-ThirdLayer-3'>
-                            <div id='LeftPanel-ThirdLayer-minimize3' ></div>
                             
-                            <div id='LeftPanel-Body-ThirdLayer-AboutMe-holder'>
-                                <div id='LeftPanel-Body-ThirdLayer-AboutMe-icon'></div>
-                                <div id='LeftPanel-Body-ThirdLayer-AboutMe-text'>About Me</div>
+
+
+                            {/* 4th layer (SUB FOLDER (certifications))*/}
+
+                            <div id='LeftPanel-FourthLayer-Certifications-subfolder-holder' style={{display:"none"}}>
+
+                                <div id='LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-holder'>
+
+                                    <div id='LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Normal'></div>
+                                    <div id='LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Minimize-Maximize'></div>
+
+                                    <div id='LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder'>
+                                        <div id='LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-icon'></div>
+                                        <div id='LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-text'>Cyber Security</div>
+                                    </div>
+
+                                </div>
+
+                                <div id='LeftPanel-FourthLayer-Certifications-subfolder-Developement-holder'>
+
+                                    <div id='LeftPanel-FourthLayer-Certifications-subfolder-Developement-Normal'></div>
+                                        <div id='LeftPanel-FourthLayer-Certifications-subfolder-Developement-Minimize-Maximize'></div>
+                                        <div id='LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder'>
+                                            <div id='LeftPanel-FourthLayer-Certifications-subfolder-Developement-icon'></div>
+                                            <div id='LeftPanel-FourthLayer-Certifications-subfolder-Developement-text'>Developement</div>
+                                        </div>
+                                </div>
+
                             </div>
-                        </div>
+
+                            
+
+                            
+
+
+                        
+                            {/* 3rd layer (Projects)*/}
+                            <div id='LeftPanel-ThirdLayer-Projects'>
+                                <div id='LeftPanel-ThirdLayer-minimize2' className={backgroundClass2}></div>
+
+                                <div id='LeftPanel-Body-ThirdLayer-Projects-holder'>
+                                    <div id='LeftPanel-Body-ThirdLayer-Projects-icon'></div>
+                                    <div id='LeftPanel-Body-ThirdLayer-Projects-text'>Projects</div>
+                                </div>
+                            </div>
+
+                            {/* 4th layer (SUB FOLDER (projects))*/}
+                            <div id='LeftPanel-FourthLayer-Projects-subfolder-holder' style={{display:"none"}}>
+
+                                <div id='LeftPanel-FourthLayer-Projects-subfolder-CyberSec-holder'>
+
+                                    <div id='LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Normal'></div>
+                                    <div id='LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Minimize-Maximize'></div>
+
+                                    <div id='LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder'>
+                                        <div id='LeftPanel-FourthLayer-Projects-subfolder-CyberSec-icon'></div>
+                                        <div id='LeftPanel-FourthLayer-Projects-subfolder-CyberSec-text'>Cyber Security</div>
+                                    </div>
+
+                                </div>
+
+                                <div id='LeftPanel-FourthLayer-Projects-subfolder-Developement-holder'>
+
+                                    <div id='LeftPanel-FourthLayer-Projects-subfolder-Developement-Normal'></div>
+                                        <div id='LeftPanel-FourthLayer-Projects-subfolder-Developement-Minimize-Maximize'></div>
+                                        <div id='LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder'>
+                                            <div id='LeftPanel-FourthLayer-Projects-subfolder-Developement-icon'></div>
+                                            <div id='LeftPanel-FourthLayer-Projects-subfolder-Developement-text'>Developement</div>
+                                        </div>
+                                </div>
+
+                            </div>
+                        
+
+
+                        
+                            {/* 3rd layer (About Me)*/}
+
+                            <div id='LeftPanel-ThirdLayer-AboutMe'>
+                                <div id='LeftPanel-ThirdLayer-minimize3' ></div>
+
+                                <div id='LeftPanel-Body-ThirdLayer-AboutMe-holder'>
+                                    <div id='LeftPanel-Body-ThirdLayer-AboutMe-icon'></div>
+                                    <div id='LeftPanel-Body-ThirdLayer-AboutMe-text'>About Me</div>
+                                </div>
+                            </div>
+
+                        
 
 
                     </div>
