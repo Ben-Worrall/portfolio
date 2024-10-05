@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('/fonts/Windows98Font.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Windows98Font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Windows98Font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Windows98Font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Windows98Font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Windows98Font.svg') format('svg'); /* Legacy iOS */
+
+}
+
+
+
 #Body{
   background-color: rgb(0, 0, 0);
   overflow: hidden;
@@ -6,6 +19,8 @@
  width: 100vw;
 height: 100vh;
 align-items: center;
+font-family:  'MyWebFont', Fallback, sans-serif;
+  overflow: hidden;
 
 }
 #screenHolder{

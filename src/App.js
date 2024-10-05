@@ -7,7 +7,8 @@ import {  BrowserRouter as Router,
 
 import Homescreen from './app/homescreen/homescreen';
 import Loadupscreen from './app/loadup/loadup';
-
+var newImg = new Image;
+newImg.src = './assets/pxfuel.jpg'
 function App(){
 return(
 <Router>
