@@ -40,11 +40,9 @@ const FileExplorer = () => {
 
        
 
+
+
     //EXPAND selected, LEFT PANEL
-
-
-
-
 
 //-----------------------------------------------------------//
 
@@ -87,6 +85,34 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-Body-ThirdLayer-AboutMe-holder').style.color = 'black'
         document.getElementById('LeftPanel-Body-ThirdLayer-AboutMe-holder').style.outlineStyle = ''
     }
+    //projects cyber sec
+    function DefaultProjectsCyberSec(){
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').style.backgroundColor = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').style.color = 'black'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').style.outlineStyle = ''
+
+    }
+    //certifications cyber sec
+    function DefaultCertificationsCyberSec(){
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').style.backgroundColor = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').style.color = 'black'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').style.outlineStyle = ''
+
+    }
+    // projects dev
+    function DefaultCertificationsDev(){
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').style.backgroundColor = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').style.color = 'black'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').style.outlineStyle = ''
+
+    }
+    //certifications dev
+    function  DefaultProjectsDev(){
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.backgroundColor = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.color = 'black'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.outlineStyle = ''
+        
+    }
 
 
 
@@ -122,6 +148,22 @@ const FileExplorer = () => {
                     if(e.target.id !== "LeftPanel-Body-ThirdLayer-AboutMe-holder" &&  e.target.id !== "LeftPanel-Body-ThirdLayer-AboutMe-text" && e.target.id !== "LeftPanel-Body-ThirdLayer-AboutMe-icon"){
                         DefaultAboutMe()
                     }
+
+                        //cyber sec (4th layer)
+                        if(e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder" &&  e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-CyberSec-text" && e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-CyberSec-icon"){
+                            DefaultProjectsCyberSec()
+                        }
+                        if(e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder" &&  e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-text" && e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-icon"){
+                            DefaultCertificationsCyberSec()
+                        }
+                        //dev (4th layer)
+                        if(e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder" &&  e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-Developement-text" && e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-Developement-icon"){
+                            DefaultCertificationsDev()
+                        }
+                        if(e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder" &&  e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-Developement-text" && e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-Developement-icon"){
+                            DefaultProjectsDev()
+                        }
+
         }
         
 
@@ -262,10 +304,59 @@ const FileExplorer = () => {
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - About Me.txt"
     })
+
+
+    //Certifications (4th layer)
+    //Cyber Sec
+    document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').addEventListener('click', function(){
+        //change style
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').style.backgroundColor = 'blue'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').style.color = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').style.outline = '0.2vw solid black '
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').style.outlineStyle = 'dotted'
+
+        //change exploring text
+        document.getElementById('Exploring-top-bar').innerText = "Exploring - Certifications / Cyber Security"
+    })
+    
+    //Dev
+    document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').addEventListener('click', function(){
+        //change style
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').style.backgroundColor = 'blue'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').style.color = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').style.outline = '0.2vw solid black '
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-Developement-Folder').style.outlineStyle = 'dotted'
+
+        //change exploring text
+        document.getElementById('Exploring-top-bar').innerText = "Exploring - Certifications / Developement"
+    })
     
 
 
+    //Projects (4th layer)
+    //cyber sec
+    document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').addEventListener('click', function(){
+        //change style
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').style.backgroundColor = 'blue'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').style.color = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').style.outline = '0.2vw solid black '
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').style.outlineStyle = 'dotted'
 
+        //change exploring text
+        document.getElementById('Exploring-top-bar').innerText = "Exploring - Projects / Cyber Security"
+    })
+    
+    //Dev
+    document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').addEventListener('click', function(){
+        //change style
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.backgroundColor = 'blue'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.color = 'white'
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.outline = '0.2vw solid black '
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.outlineStyle = 'dotted'
+
+        //change exploring text
+        document.getElementById('Exploring-top-bar').innerText = "Exploring - Projects / Developement"
+    })
 
 
 //-----------------------------------------------------------//
@@ -287,6 +378,7 @@ const FileExplorer = () => {
 
    })
   //MINIMIZE Portfolio
+  
 
 
 
