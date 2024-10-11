@@ -439,7 +439,7 @@ height: 50%;
     align-items: center;
 }
 #LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Minimize-Maximize{
-    background-image: url("/src/assets/icons/Expand.png");
+    background-image: url("/src/assets/icons/normal.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 12%;
@@ -449,7 +449,7 @@ height: 50%;
     align-items: center;
 }
 #LeftPanel-FourthLayer-Certifications-subfolder-Developement-Minimize-Maximize{
-    background-image: url("/src/assets/icons/Expand.png");
+    background-image: url("/src/assets/icons/normal.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 12%;
@@ -554,7 +554,7 @@ display: flex;
 align-items: center;
 }
 #LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Minimize-Maximize{
-background-image: url("/src/assets/icons/Expand.png");
+background-image: url("/src/assets/icons/normal.png");
 background-repeat: no-repeat;
 background-size: 100% 100%;
 width: 12%;
@@ -564,7 +564,7 @@ display: flex;
 align-items: center;
 }
 #LeftPanel-FourthLayer-Projects-subfolder-Developement-Minimize-Maximize{
-background-image: url("/src/assets/icons/Expand.png");
+background-image: url("/src/assets/icons/normal.png");
 background-repeat: no-repeat;
 background-size: 100% 100%;
 width: 12%;
