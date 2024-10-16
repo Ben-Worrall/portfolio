@@ -1,0 +1,50 @@
+
+#RightPanel-BenW-Holder{
+    font-weight: bold;
+    width: 50%;
+    height: 10%;
+}
+#RightPanel-BenW-icon{
+    background-image: url("/src/assets/icons/computer_explorer-4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 10%;
+    height: 100%;
+    float: left;
+    
+}
+#RightPanel-BenW-text{
+  float: right;
+  width: 50%;
+}
+
+
+
+
+#RightPanel-Portfolio-Holder{
+    font-weight: bold;
+}
+
+#RightPanel-Portfolio-Subfolders-holder{
+    font-weight: bold;
+}
+
+#RightPanel-Projects-Subfolders-holder{
+    font-weight: bold;
+}
+
+#RightPanel-Certifications-Subfolders-holder{
+    font-weight: bold;
+}
+
+#RightPanel-AboutMe-Holder{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+

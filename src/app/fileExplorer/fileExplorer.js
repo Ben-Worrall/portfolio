@@ -1,10 +1,14 @@
 import './fileExplorer-LeftPanel.css'
 import './fileExplorer-RightPanel.css'
+import './functions/fileExplorer-RightPanel-css.css'
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-
-
-
+import fileExplorer_RightPanel_Desktop from './functions/fileExplorer-RightPanel-Desktop';
+import fileExplorer_RightPanel_Projects from './functions/fileExplorer-RightPanel-Projects';
+import fileExplorer_RightPanel_Portfolio from './functions/fileExplorer-RightPanel-Portfolio';
+import fileExplorer_RightPanel_Certifications from './functions/fileExplorer-RightPanel-Certifications';
+import fileExplorer_RightPanel_BenW from './functions/fileExplorer-RightPanel-BenW';
+import fileExplorer_RightPanel_AboutMe from './functions/fileExplorer-RightPanel-AboutMe';
 
 const FileExplorer = () => {
 
@@ -38,7 +42,74 @@ const FileExplorer = () => {
 
     useEffect(() => {
 
-       
+        
+
+   // WHEN YOU CLICK ON EACH FOLDER, SHOW ON RIGHT PANEL
+//-----------------------------------------------------------//
+        //desktop
+        document.getElementById('LeftPanel-Desktop-holder').addEventListener('click', function(){
+            document.getElementById('Desktop').style.display = ""
+            document.getElementById('BenW').style.display = "none"
+            document.getElementById('Portfolio').style.display = "none"
+            document.getElementById('Certifications').style.display = "none"
+            document.getElementById('Projects').style.display = "none"
+            document.getElementById('AboutMe').style.display = "none"
+        })
+
+        //benW
+        document.getElementById('LeftPanel-FirstLayer-BenW-holder').addEventListener('click', function(){
+            document.getElementById('BenW').style.display = ""
+            document.getElementById('Desktop').style.display = "none"
+            document.getElementById('Portfolio').style.display = "none"
+            document.getElementById('Certifications').style.display = "none"
+            document.getElementById('Projects').style.display = "none"
+            document.getElementById('AboutMe').style.display = "none"
+        })
+
+        //portfolio
+        document.getElementById('LeftPanel-SecondLayer-Portfolio-holder').addEventListener('click', function(){
+            document.getElementById('Portfolio').style.display = ""
+            document.getElementById('Desktop').style.display = "none"
+            document.getElementById('BenW').style.display = "none"
+            document.getElementById('Certifications').style.display = "none"
+            document.getElementById('Projects').style.display = "none"
+            document.getElementById('AboutMe').style.display = "none"
+        })
+
+        //certuifications
+        document.getElementById('LeftPanel-Body-ThirdLayer-Certifications-holder').addEventListener('click', function(){
+            document.getElementById('Certifications').style.display = ""
+            document.getElementById('Desktop').style.display = "none"
+            document.getElementById('BenW').style.display = "none"
+            document.getElementById('Portfolio').style.display = "none"
+            document.getElementById('Projects').style.display = "none"
+            document.getElementById('AboutMe').style.display = "none"
+        })
+            //cyber sec
+            //dev
+
+        //projects
+        document.getElementById('LeftPanel-Body-ThirdLayer-Projects-holder').addEventListener('click', function(){
+            document.getElementById('Projects').style.display = ""
+            document.getElementById('Desktop').style.display = "none"
+            document.getElementById('BenW').style.display = "none"
+            document.getElementById('Portfolio').style.display = "none"
+            document.getElementById('Certifications').style.display = "none"
+            document.getElementById('AboutMe').style.display = "none"
+        })
+            //cyber sec
+            //dev
+
+        //about me
+        document.getElementById('LeftPanel-Body-ThirdLayer-AboutMe-holder').addEventListener('click', function(){
+            document.getElementById('AboutMe').style.display = ""
+            document.getElementById('Desktop').style.display = "none"
+            document.getElementById('BenW').style.display = "none"
+            document.getElementById('Portfolio').style.display = "none"
+            document.getElementById('Certifications').style.display = "none"
+            document.getElementById('Projects').style.display = "none"
+        })
+
 
 
 
@@ -605,6 +676,26 @@ const FileExplorer = () => {
 
 
             <div id='rightPanel'>
+                      
+                <div id="Desktop" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_Desktop()}
+                </div>
+                <div id="BenW" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_BenW()}
+                </div>
+                <div id="Portfolio" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_Portfolio()}
+                </div>
+                <div id="Certifications" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_Certifications()}
+                </div>
+                <div id="Projects" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_Projects()}
+                </div>
+                <div id="AboutMe" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_AboutMe()}
+                </div>
+                
 
             </div>
 
