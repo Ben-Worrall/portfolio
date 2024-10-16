@@ -676,6 +676,11 @@ const FileExplorer = () => {
 
 
             <div id='rightPanel'>
+                <div id='Rightbar-topPanel' >
+                    <div id='Rightbar-topPanel-Name'><div style={{marginLeft:"3%"}}>Name</div></div>
+                    <div id='Rightbar-topPanel-Size'><div style={{marginLeft:"77.5%"}}>Size</div></div>
+                    <div id='Rightbar-topPanel-Type'><div style={{marginLeft:"3%"}}>Type</div></div>
+                </div>
                       
                 <div id="Desktop" className='rightpanel-object' style={{display:'none'}}>
                     {fileExplorer_RightPanel_Desktop()}

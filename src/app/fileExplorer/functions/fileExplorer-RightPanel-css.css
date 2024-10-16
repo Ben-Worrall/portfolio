@@ -1,22 +1,214 @@
 
 #RightPanel-BenW-Holder{
     font-weight: bold;
-    width: 50%;
+    width: 20%;
     height: 10%;
+    display: flex;
+    align-items: center;
 }
 #RightPanel-BenW-icon{
     background-image: url("/src/assets/icons/computer_explorer-4.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 10%;
-    height: 100%;
+    width: 17.5%;
+    height: 60%;
     float: left;
     
 }
 #RightPanel-BenW-text{
   float: right;
   width: 50%;
+  display: flex;
+    align-items: center;
+    margin-left: 4%;
+    
 }
+
+
+
+
+
+
+
+#RightPanel-Portfolio-Holder{
+    font-weight: bold;
+    width: 100%;
+    height: 6%;
+    margin-top: 0.5%;
+    
+}
+#RightPanel-Portfolio-icon{
+    background-image: url("/src/assets/icons/hard_disk_drive-2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3.5%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#RightPanel-Portfolio-text{
+    float: left;
+  width: 30%;
+  display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+}
+#RightPanel-Portfolio-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+#RightPanel-Portfolio-Subfolders-holder{
+    font-weight: bold;
+    width: 100%;
+    height: 18%;
+    margin-top: 0.5%;
+}
+#RightPanel-Portfolio-Subfolders-Certifications-holder{
+    width: 100%;
+    height: 33%;
+}
+#RightPanel-Portfolio-Subfolders-Certifications-icon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#RightPanel-Portfolio-Subfolders-Certifications-text{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+}
+#RightPanel-Portfolio-Subfolders-Certifications-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+#RightPanel-Portfolio-Subfolders-Projects-holder{
+    width: 100%;
+    height: 33%;
+    margin-top: 0.3333333%;
+}
+#RightPanel-Portfolio-Subfolders-Projects-icon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#RightPanel-Portfolio-Subfolders-Projects-text{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+}
+#RightPanel-Portfolio-Subfolders-Projects-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+#RightPanel-Portfolio-Subfolders-AboutMe-holder{
+    width: 100%;
+    height: 33%;
+    margin-top: 0.33333333333%;
+}
+#RightPanel-Portfolio-Subfolders-AboutMe-icon{
+    background-image: url("/src/assets/icons/document-0.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#RightPanel-Portfolio-Subfolders-AboutMe-text{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+}
+#RightPanel-Portfolio-Subfolders-AboutMe-size{
+    float: left;
+    width: 5.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+   
+}
+#RightPanel-Portfolio-Subfolders-AboutMe-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
