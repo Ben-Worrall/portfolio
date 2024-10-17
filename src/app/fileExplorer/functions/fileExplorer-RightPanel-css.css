@@ -182,7 +182,145 @@
 
 
 
+#RightPanel-Certifications-Subfolders-holder{
+    font-weight: bold;
+    width: 100%;
+    height: 12%;
+    margin-top: 0.5%;
+}
+#RightPanel-Certifications-Subfolders-CyberSec-holder{
+    width: 100%;
+    height: 49.5%;
+}
+#RightPanel-Certifications-Subfolders-CyberSec-icon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#RightPanel-Certifications-Subfolders-CyberSec-text{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+}
+#RightPanel-Certifications-Subfolders-CyberSec-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
+#RightPanel-Certifications-Subfolders-Dev-holder{
+    width: 100%;
+    height: 49.5%;
+    margin-top: 1%;
+}
+#RightPanel-Certifications-Subfolders-Dev-icon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#RightPanel-Certifications-Subfolders-Dev-text{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+}
+#RightPanel-Certifications-Subfolders-Dev-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+#RightPanel-Projects-Subfolders-holder{
+    font-weight: bold;
+    width: 100%;
+    height: 12%;
+    margin-top: 0.5%;
+  }
+  #RightPanel-Projects-Subfolders-CyberSec-holder{
+    width: 100%;
+    height: 49.5%;
+  }
+  #RightPanel-Projects-Subfolders-CyberSec-icon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #RightPanel-Projects-Subfolders-CyberSec-text{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+  }
+  #RightPanel-Projects-Subfolders-CyberSec-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #RightPanel-Projects-Subfolders-Dev-holder{
+    width: 100%;
+    height: 49.5%;
+    margin-top: 1%;
+  }
+  #RightPanel-Projects-Subfolders-Dev-icon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 3%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #RightPanel-Projects-Subfolders-Dev-text{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+  }
+  #RightPanel-Projects-Subfolders-Dev-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
 
 
 

@@ -1,11 +1,32 @@
 import './fileExplorer-RightPanel-css.css'
 const fileExplorer_RightPanel_BenW = () => {
 
+    window.addEventListener('click',(e)=>{
+        if(e.target.id !== "RightPanel-Portfolio-Holder" && e.target.id !== "RightPanel-Portfolio-icon" && e.target.id !== "RightPanel-Portfolio-text" ){
+            let holder = document.getElementById('RightPanel-Portfolio-Holder')
+            holder.style.backgroundColor = 'white'
+            holder.style.color = 'black'
+            holder.style.outline = ''
+            
+        }
+    })
+
+
+
+    function go_blue_on_click(){
+        let holder = document.getElementById('RightPanel-Portfolio-Holder')
+        holder.style.backgroundColor = 'blue'
+        holder.style.color = 'white'
+        holder.style.outline = '0.2vw solid black '
+        holder.style.outlineStyle = 'dotted'
+    }
+    
+
     return(
-        <div id='RightPanel-Portfolio-Holder'>
+        <div id='RightPanel-Portfolio-Holder' onClick={go_blue_on_click}>
             <div id='RightPanel-Portfolio-icon'></div>
             <div id='RightPanel-Portfolio-text'>Portfolio (c:)</div>
-            <div id='RightPanel-Portfolio-type'>File Folder</div>
+            <div id='RightPanel-Portfolio-type'>Drive</div>
         </div>
     )
 }
