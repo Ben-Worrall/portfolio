@@ -24,6 +24,7 @@ const fileExplorer_RightPanel_Desktop = () => {
         <div id='RightPanel-BenW-Holder' onClick={go_blue_on_click}>
             <div id='RightPanel-BenW-icon'></div>
             <div id='RightPanel-BenW-text'>BenW</div>
+            <div id='RightPanel-BenW-type'>User</div>
         </div>
     )
 }

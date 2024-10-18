@@ -27,7 +27,7 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = ""
     } else {
         document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = "none"
-        document.getElementById('LeftPanel-Body-ThirdLayer-Certifications-holder').style.display = "none"
+        
 
     }
   };
@@ -38,7 +38,7 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = ""
     } else {
         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = "none"
-        document.getElementById('LeftPanel-Body-ThirdLayer-Projects-holder').style.display = "none"
+
 
     }
   };
@@ -310,6 +310,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Desktop"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - Desktop"
 
         DefaultBenW()
         DefaultPortfolio()
@@ -333,6 +334,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - BenW"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - BenW"
 
         DefaultPortfolio()
     })
@@ -358,6 +360,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Portfolio (c:)"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - Portfolio (c:)"
     })
     document.getElementById('LeftPanel-SecondLayer-minimize').onclick = function(e){
         e.preventDefault(); 
@@ -380,6 +383,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Certifications"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - Certifications"
     })
     //minimize or expand
     document.getElementById('LeftPanel-ThirdLayer-minimize1').onclick = function(e){
@@ -398,6 +402,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Projects"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - Projects"
     })
     //minimize or expand
     document.getElementById('LeftPanel-ThirdLayer-minimize2').onclick = function(e){
@@ -418,6 +423,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - About Me.txt"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - About Me.txt"
     })
 
 
@@ -444,6 +450,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Certifications / Developement"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - Certifications"
     })
     
 
@@ -459,6 +466,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Projects / Cyber Security"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - Projects"
     })
     
     //Dev
@@ -471,6 +479,7 @@ const FileExplorer = () => {
 
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Projects / Developement"
+        document.getElementById('fileExplorer-text').innerText = "Exploring - Projects"
     })
 
 

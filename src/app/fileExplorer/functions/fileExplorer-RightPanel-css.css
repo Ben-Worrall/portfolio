@@ -1,27 +1,37 @@
 
 #RightPanel-BenW-Holder{
     font-weight: bold;
-    width: 20%;
-    height: 10%;
-    display: flex;
-    align-items: center;
+    width: 100%;
+    height: 6%;
+    margin-top: 0.5%;
 }
 #RightPanel-BenW-icon{
     background-image: url("/src/assets/icons/computer_explorer-4.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 17.5%;
-    height: 60%;
+    width: 3.5%;
+    height: 100%;
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 #RightPanel-BenW-text{
-  float: right;
-  width: 50%;
-  display: flex;
-    align-items: center;
-    margin-left: 4%;
+    float: left;
+    width: 30%;
+    display: flex;
+      align-items: center;
+      margin-left: 0.5%;
+      height: 100%;
     
+}
+#RightPanel-BenW-type{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 
