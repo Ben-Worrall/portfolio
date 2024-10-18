@@ -42,8 +42,8 @@ body{
     position: absolute;
     left: 10%;
     top: 10%;
-    border-left: rgb(170, 170, 170) solid 0.4vw;
-    border-top: rgb(170, 170, 170) solid 0.4vw;
+    border-left: rgb(221, 221, 221) solid 0.4vw;
+    border-top: rgb(221, 221, 221) solid 0.4vw;
     border-right:rgb(88, 88, 88) solid 0.4vw;
     border-bottom:rgb(88, 88, 88) solid 0.4vw;
     align-items: center;

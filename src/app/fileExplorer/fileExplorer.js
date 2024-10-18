@@ -18,6 +18,7 @@ const FileExplorer = () => {
     const [backgroundClass1, setBackgroundClass1] = useState('LeftPanel-ThirdLayer-Expand-image');
     const [backgroundClass2, setBackgroundClass2] = useState('LeftPanel-ThirdLayer-Expand-image');
     const [backgroundClass3, setBackgroundClass3] = useState('LeftPanel-ThirdLayer-Expand-image');
+    const [backgroundClass4, setBackgroundClass4] = useState('LeftPanel-ThirdLayer-Expand-image');
 
     //for certifications
   const changeBackground1 = () => {
@@ -26,6 +27,8 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = ""
     } else {
         document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = "none"
+        document.getElementById('LeftPanel-Body-ThirdLayer-Certifications-holder').style.display = "none"
+
     }
   };
   //fopr projects
@@ -35,8 +38,40 @@ const FileExplorer = () => {
         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = ""
     } else {
         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = "none"
+        document.getElementById('LeftPanel-Body-ThirdLayer-Projects-holder').style.display = "none"
+
     }
   };
+  //for portfolio
+  const changeBackground3 = () => {
+    setBackgroundClass3(backgroundClass3 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');    
+  
+    if(document.getElementById('LeftPanel-Body-ThirdLayer').style.display !== ""){
+        document.getElementById('LeftPanel-Body-ThirdLayer').style.display = ""
+       
+    } else {
+        document.getElementById('LeftPanel-Body-ThirdLayer').style.display = "none"
+         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = "none"
+         document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = "none"
+
+       
+    }
+    };
+  //for benw
+  const changeBackground4 = () => {
+    setBackgroundClass4(backgroundClass4 === 'LeftPanel-ThirdLayer-Expand-image' ? 'LeftPanel-ThirdLayer-Minimize-image' : 'LeftPanel-ThirdLayer-Expand-image');    
+  
+    if(document.getElementById('LeftPanel-Body-SecondLayer').style.display !== ""){
+        document.getElementById('LeftPanel-Body-SecondLayer').style.display = ""
+       
+    } else {
+        document.getElementById('LeftPanel-Body-SecondLayer').style.display = "none"
+        document.getElementById('LeftPanel-Body-ThirdLayer').style.display = "none"
+        document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-holder').style.display = "none"
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-holder').style.display = "none"
+
+    }
+    };
   
     
 
@@ -301,6 +336,10 @@ const FileExplorer = () => {
 
         DefaultPortfolio()
     })
+    document.getElementById('LeftPanel-FirstLayer-minimize').onclick = function(e){
+        e.preventDefault(); 
+        changeBackground4()
+    }
 
     //SECOND LAYER
 
@@ -316,9 +355,14 @@ const FileExplorer = () => {
         //show expanded elements
         document.getElementById('LeftPanel-Body-ThirdLayer').style.display = ""
 
+
         //change exploring text
         document.getElementById('Exploring-top-bar').innerText = "Exploring - Portfolio (c:)"
     })
+    document.getElementById('LeftPanel-SecondLayer-minimize').onclick = function(e){
+        e.preventDefault(); 
+        changeBackground3()
+    }
 
 
 
@@ -436,18 +480,10 @@ const FileExplorer = () => {
 
 
   //MINIMIZE desktop
-   document.getElementById('LeftPanel-FirstLayer-minimize').addEventListener('click', function(){
-        document.getElementById('leftPanel-Body-FirstLayer').style.display = "none"
-        document.getElementById('LeftPanel-Body-SecondLayer').style.display = "none"
-        document.getElementById('LeftPanel-Body-ThirdLayer').style.display = "none"
-   })
+   
 
    //MINIMIZE BenW
-   document.getElementById('LeftPanel-SecondLayer-minimize').addEventListener('click', function(){
-    document.getElementById('LeftPanel-Body-SecondLayer').style.display = "none"
-     document.getElementById('LeftPanel-Body-ThirdLayer').style.display = "none"
-
-   })
+   
   //MINIMIZE Portfolio
   
 
@@ -529,10 +565,10 @@ const FileExplorer = () => {
 
 
        
-                    <div id='leftPanel-Body-FirstLayer' >
+                    <div id='leftPanel-Body-FirstLayer' style={{display:'none'}}>
                         
 
-                        <div id='LeftPanel-FirstLayer-minimize'></div>
+                        <div id='LeftPanel-FirstLayer-minimize' className={backgroundClass4}></div>
 
 
                         <div id='LeftPanel-FirstLayer-BenW-holder'>
@@ -543,9 +579,9 @@ const FileExplorer = () => {
                     </div>
 
 
-                    <div id='LeftPanel-Body-SecondLayer' >
+                    <div id='LeftPanel-Body-SecondLayer' style={{display:'none'}}>
 
-                            <div id='LeftPanel-SecondLayer-minimize'></div>
+                            <div id='LeftPanel-SecondLayer-minimize' className={backgroundClass3}></div>
 
                             <div id='LeftPanel-SecondLayer-Portfolio-holder'>
                                 <div id='LeftPanel-SecondLayer-Portfolio-icon'></div>
@@ -556,7 +592,7 @@ const FileExplorer = () => {
                     </div>
 
 
-                    <div id='LeftPanel-Body-ThirdLayer'>
+                    <div id='LeftPanel-Body-ThirdLayer' style={{display:'none'}}>
 
                         
                                {/* 3rd layer (Certifications)*/}
