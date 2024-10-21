@@ -20,8 +20,15 @@ const fileExplorer_RightPanel_Desktop = () => {
         holder.style.outline = '0.2vw solid black '
         holder.style.outlineStyle = 'dotted'
     }
+
+    function shownextfolder(){
+        document.getElementById('Desktop').style.display = "none"
+           document.getElementById('BenW').style.display = ""
+           document.getElementById('navigate-bnt-back').title = "BenW"
+    }      
+
     return(
-        <div id='RightPanel-BenW-Holder' onClick={go_blue_on_click}>
+        <div id='RightPanel-BenW-Holder' onClick={go_blue_on_click} onDoubleClick={shownextfolder}>
             <div id='RightPanel-BenW-icon'></div>
             <div id='RightPanel-BenW-text'>BenW</div>
             <div id='RightPanel-BenW-type'>User</div>

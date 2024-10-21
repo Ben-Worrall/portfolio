@@ -50,15 +50,23 @@ const fileExplorer_RightPanel_Portfolio = () => {
         holder.style.outlineStyle = 'dotted'
     }
 
+    function shownextfolderCert(){
+        document.getElementById('Portfolio').style.display = "none"
+           document.getElementById('Certifications').style.display = ""
+    }
+    function shownextfolderProj(){
+        document.getElementById('Portfolio').style.display = "none"
+           document.getElementById('Projects').style.display = ""
+    }
 
     return(
         <div id='RightPanel-Portfolio-Subfolders-holder'>
-            <div id='RightPanel-Portfolio-Subfolders-Certifications-holder' onClick={go_blue_on_clickCyber}>
+            <div id='RightPanel-Portfolio-Subfolders-Certifications-holder' onClick={go_blue_on_clickCyber} onDoubleClick={shownextfolderCert}>
                 <div id='RightPanel-Portfolio-Subfolders-Certifications-icon'></div>
                 <div id='RightPanel-Portfolio-Subfolders-Certifications-text'>Certifications</div>
                 <div id='RightPanel-Portfolio-Subfolders-Certifications-type'>File Folder</div>
             </div>
-            <div id='RightPanel-Portfolio-Subfolders-Projects-holder' onClick={go_blue_on_clickDev}>
+            <div id='RightPanel-Portfolio-Subfolders-Projects-holder' onClick={go_blue_on_clickDev} onDoubleClick={shownextfolderProj}>
                 <div id='RightPanel-Portfolio-Subfolders-Projects-icon'></div>
                 <div id='RightPanel-Portfolio-Subfolders-Projects-text'>Projects</div>
                 <div id='RightPanel-Portfolio-Subfolders-Projects-type'>File Folder</div>

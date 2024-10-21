@@ -89,6 +89,7 @@ const FileExplorer = () => {
             document.getElementById('Certifications').style.display = "none"
             document.getElementById('Projects').style.display = "none"
             document.getElementById('AboutMe').style.display = "none"
+            document.getElementById('arrow-body').style.display = "none"
         })
 
         //benW
@@ -485,16 +486,46 @@ const FileExplorer = () => {
 
 //-----------------------------------------------------------//
 
-    //MINIMIZE ELEMENTS
+    //navigate  back
 
+    //back
+    document.getElementById('navigate-bnt-back').addEventListener('click', (e)=>{
+        
+        let testCounter = 0
+        let test = false
+        while(test === false){
 
-  //MINIMIZE desktop
-   
+            if(document.getElementById('navigate-bnt-back').title == "BenW"){
+                console.log('check benw')
+                document.getElementById('BenW').style.display = "none"
+                document.getElementById('Desktop').style.display = ""
+                
+                 
+                test = true
+                testCounter = 1
+                console.log(testCounter)
 
-   //MINIMIZE BenW
-   
-  //MINIMIZE Portfolio
-  
+            }else if(document.getElementById('navigate-bnt-back').title == "Portfolio"){
+                console.log('check portfolio')
+                document.getElementById('BenW').style.display = ""
+                document.getElementById('Portfolio').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "BenW"
+                test = true
+                testCounter = 2
+                console.log(testCounter)
+            }
+            else{
+                test = true
+                console.log(testCounter)
+            }
+            
+
+        }
+           
+        
+        
+
+    })
 
 
 
@@ -507,11 +538,18 @@ const FileExplorer = () => {
 
     return(
         <div id='App'>
+
+            {/* arrow to point to desktop (first option) */}
+            <div className='arrows-body' id='arrow-body'>
+                <div className='arrow'></div>
+                <div className='arrow'></div>
+                <div className='arrow'></div>
+            </div>
             
 
             <div id='topPanel'>
                   <div id='Leftbar-topPanel' class='top-panel-item'></div>
-
+                  
                     <div class='top-panel-item'> 
                         <a class='top-panel-link' target="_blank" href='https://github.com/Ben-Worrall' >
                             <u>G</u>ithub
@@ -547,6 +585,9 @@ const FileExplorer = () => {
                             <u>R</u>esume
                         </a>
                     </div>
+
+
+                    
             </div>
 
 
@@ -556,6 +597,9 @@ const FileExplorer = () => {
 
                 <div id='LeftPanel-Header'>
                     <div style={{marginLeft:"5%"}}>Folders</div>
+                    <div id='navigate-bnts-holder'>
+                        <button id='navigate-bnt-back' >⇦</button>
+                    </div>
                     
                 </div>
 
@@ -726,7 +770,7 @@ const FileExplorer = () => {
                     <div id='Rightbar-topPanel-Size'><div style={{marginLeft:"77.5%"}}>Size</div></div>
                     <div id='Rightbar-topPanel-Type'><div style={{marginLeft:"3%"}}>Type</div></div>
                 </div>
-                      
+
                 <div id="Desktop" className='rightpanel-object' style={{display:'none'}}>
                     {fileExplorer_RightPanel_Desktop()}
                 </div>

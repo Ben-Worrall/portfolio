@@ -35,7 +35,7 @@ const fileExplorer_RightPanel_Projects = () => {
     }
     return(
         <div id='RightPanel-Projects-Subfolders-holder'>
-            <div id='RightPanel-Projects-Subfolders-CyberSec-holder' onClick={go_blue_on_clickCyber}>
+            <div id='RightPanel-Projects-Subfolders-CyberSec-holder' onClick={go_blue_on_clickCyber} >
                 <div id='RightPanel-Projects-Subfolders-CyberSec-icon'></div>
                 <div id='RightPanel-Projects-Subfolders-CyberSec-text'>Cyber Security</div>
                 <div id='RightPanel-Projects-Subfolders-CyberSec-type'>File Folder</div>
