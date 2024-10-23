@@ -24,7 +24,7 @@ const fileExplorer_RightPanel_Desktop = () => {
     function shownextfolder(){
         document.getElementById('Desktop').style.display = "none"
            document.getElementById('BenW').style.display = ""
-           document.getElementById('navigate-bnt-back').title = "BenW"
+           document.getElementById('navigate-bnt-back').title = "Desktop"
     }      
 
     return(

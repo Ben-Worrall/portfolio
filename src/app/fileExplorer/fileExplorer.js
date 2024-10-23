@@ -489,34 +489,42 @@ const FileExplorer = () => {
     //navigate  back
 
     //back
-    document.getElementById('navigate-bnt-back').addEventListener('click', (e)=>{
+    document.getElementById('navigate-bnt-back').onclick = (e)=>{
         
-        let testCounter = 0
+        
         let test = false
         while(test === false){
 
-            if(document.getElementById('navigate-bnt-back').title == "BenW"){
+            if(document.getElementById('navigate-bnt-back').title == "Desktop"){
                 console.log('check benw')
-                document.getElementById('BenW').style.display = "none"
                 document.getElementById('Desktop').style.display = ""
+                document.getElementById('BenW').style.display = "none"
                 
                  
                 test = true
-                testCounter = 1
-                console.log(testCounter)
 
-            }else if(document.getElementById('navigate-bnt-back').title == "Portfolio"){
+            }
+             if(document.getElementById('navigate-bnt-back').title == "BenW"){
                 console.log('check portfolio')
                 document.getElementById('BenW').style.display = ""
                 document.getElementById('Portfolio').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "Desktop"
+                test = true
+                
+            }
+            if(document.getElementById('navigate-bnt-back').title == "Portfolio"){
+                console.log('check portfolio')
+                document.getElementById('Portfolio').style.display = ""
+                document.getElementById('Projects').style.display = "none"
+                document.getElementById('Certifications').style.display = "none"
                 document.getElementById('navigate-bnt-back').title = "BenW"
                 test = true
-                testCounter = 2
-                console.log(testCounter)
+                
             }
+            
             else{
                 test = true
-                console.log(testCounter)
+
             }
             
 
@@ -525,7 +533,7 @@ const FileExplorer = () => {
         
         
 
-    })
+    }
 
 
 

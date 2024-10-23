@@ -23,7 +23,7 @@ const fileExplorer_RightPanel_BenW = () => {
     function shownextfolder(){
         document.getElementById('BenW').style.display = "none"
         document.getElementById('Portfolio').style.display = ""
-        document.getElementById('navigate-bnt-back').title = "Portfolio"
+        document.getElementById('navigate-bnt-back').title = "BenW"
     }
     
 
