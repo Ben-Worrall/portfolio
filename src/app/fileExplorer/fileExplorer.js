@@ -9,7 +9,7 @@ import fileExplorer_RightPanel_Portfolio from './functions/fileExplorer-RightPan
 import fileExplorer_RightPanel_Certifications from './functions/fileExplorer-RightPanel-Certifications';
 import fileExplorer_RightPanel_BenW from './functions/fileExplorer-RightPanel-BenW';
 import fileExplorer_RightPanel_AboutMe from './functions/fileExplorer-RightPanel-AboutMe';
-
+import fileExplorer_RightPanel_Projects_Developement from './functions/fileExplorer-RightPanel-Projects-Developement';
 const FileExplorer = () => {
 
 
@@ -796,6 +796,9 @@ const FileExplorer = () => {
                 </div>
                 <div id="AboutMe" className='rightpanel-object' style={{display:'none'}}>
                     {fileExplorer_RightPanel_AboutMe()}
+                </div>
+                <div id="Projects-Developement" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_Projects_Developement()}
                 </div>
                 
 

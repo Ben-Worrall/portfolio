@@ -33,6 +33,11 @@ const fileExplorer_RightPanel_Projects = () => {
         holder.style.outline = '0.2vw solid black '
         holder.style.outlineStyle = 'dotted'
     }
+    function shownextfolderDev(){
+        
+        document.getElementById('Projects').style.display = "none"
+        document.getElementById('Projects-Developement').style.display = ""
+    }
     return(
         <div id='RightPanel-Projects-Subfolders-holder'>
             <div id='RightPanel-Projects-Subfolders-CyberSec-holder' onClick={go_blue_on_clickCyber} >
@@ -41,7 +46,7 @@ const fileExplorer_RightPanel_Projects = () => {
                 <div id='RightPanel-Projects-Subfolders-CyberSec-type'>File Folder</div>
             </div>
 
-            <div id='RightPanel-Projects-Subfolders-Dev-holder' onClick={go_blue_on_clickDev}>
+            <div id='RightPanel-Projects-Subfolders-Dev-holder' onClick={go_blue_on_clickDev} onDoubleClick={shownextfolderDev}>
                 <div id='RightPanel-Projects-Subfolders-Dev-icon'></div>
                 <div id='RightPanel-Projects-Subfolders-Dev-text'>Developement</div>
                 <div id='RightPanel-Projects-Subfolders-Dev-type'>File Folder</div>

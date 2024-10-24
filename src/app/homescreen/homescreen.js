@@ -293,7 +293,15 @@ document.ontouchstart = filter;
   document.getElementById('FileExplorer-App').onmouseover = hover
 
 
+
+  
+
+
   });
+
+  function CloseRenderApp(){
+    document.getElementById('RenderApp').style.display = "none"
+  }
 
 
     return(
@@ -363,6 +371,12 @@ document.ontouchstart = filter;
                        <div id='fileExplorer-icon'></div>
                        <div id='fileExplorer-text'>Exploring - MyComputer</div>
                     </div>
+                    <div id="EXE-App">
+                       <div id='EXE-App-icon'></div>
+                       <div id='EXE-App-text'>Render App.exe</div>
+                    </div>
+                    
+                    
                 </div>
                 
 
@@ -402,8 +416,21 @@ document.ontouchstart = filter;
                  
                 </div>
 
+            </div>
 
 
+            <div id='RenderApp' style={{display:'none'}}>
+              <div id='RenderApp-top-bar'>
+                <div id='RenderApp-WebLink'>
+                  <a id='RenderApp-link' href='https://ratingclients.netlify.app/' target="_blank">https://ratingclients.netlify.app/</a>
+                </div>
+                <div id='RenderApp-top-buttons'>
+                  <button id='RenderApp-exit-button' onClick={CloseRenderApp}>X</button>
+                </div>
+              </div>
+              <div id='RenderApp-body'>
+              <iframe src="https://ratingclients.netlify.app/" id='RenderApp-body-iframe'></iframe>
+              </div>
             </div>
 
 
