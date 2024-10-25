@@ -37,6 +37,7 @@ const fileExplorer_RightPanel_Projects = () => {
         
         document.getElementById('Projects').style.display = "none"
         document.getElementById('Projects-Developement').style.display = ""
+        document.getElementById('navigate-bnt-back').title = "Projects"
     }
     return(
         <div id='RightPanel-Projects-Subfolders-holder'>

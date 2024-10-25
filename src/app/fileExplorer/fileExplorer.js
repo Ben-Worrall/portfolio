@@ -521,6 +521,15 @@ const FileExplorer = () => {
                 test = true
                 
             }
+            if(document.getElementById('navigate-bnt-back').title == "Projects"){
+                console.log('check portfolio')
+               
+                document.getElementById('Projects').style.display = ""
+                document.getElementById('Projects-Developement').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "Portfolio"
+                test = true
+                
+            }
             
             else{
                 test = true
