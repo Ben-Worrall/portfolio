@@ -10,6 +10,12 @@ import fileExplorer_RightPanel_Certifications from './functions/fileExplorer-Rig
 import fileExplorer_RightPanel_BenW from './functions/fileExplorer-RightPanel-BenW';
 import fileExplorer_RightPanel_AboutMe from './functions/fileExplorer-RightPanel-AboutMe';
 import fileExplorer_RightPanel_Projects_Developement from './functions/fileExplorer-RightPanel-Projects-Developement';
+import Projects_Developement_RateTheSkin from './functions/Projects-Developement/Projects-Developement-RateTheSkin';
+
+
+
+
+
 const FileExplorer = () => {
 
 
@@ -782,6 +788,7 @@ const FileExplorer = () => {
 
 
             <div id='rightPanel'>
+                
                 <div id='Rightbar-topPanel' >
                     <div id='Rightbar-topPanel-Name'><div style={{marginLeft:"3%"}}>Name</div></div>
                     <div id='Rightbar-topPanel-Size'><div style={{marginLeft:"77.5%"}}>Size</div></div>
@@ -808,6 +815,9 @@ const FileExplorer = () => {
                 </div>
                 <div id="Projects-Developement" className='rightpanel-object' style={{display:'none'}}>
                     {fileExplorer_RightPanel_Projects_Developement()}
+                </div>
+                <div id="Projects-Developement-RateTheSkin" className='rightpanel-object' style={{display:'none'}}>
+                    {Projects_Developement_RateTheSkin()}
                 </div>
                 
 

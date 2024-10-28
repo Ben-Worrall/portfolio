@@ -77,7 +77,7 @@ const fileExplorer_RightPanel_Portfolio = () => {
                 <div id='RightPanel-Portfolio-Subfolders-AboutMe-icon'></div>
                 <div id='RightPanel-Portfolio-Subfolders-AboutMe-text'>About Me</div>
                 <div id='RightPanel-Portfolio-Subfolders-AboutMe-size'>10 KB</div>
-                <div id='RightPanel-Portfolio-Subfolders-AboutMe-type'>Text File</div>
+                <div id='RightPanel-Portfolio-Subfolders-AboutMe-type'>Text Document</div>
             </div>
         </div>
         

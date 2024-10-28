@@ -89,6 +89,17 @@ const fileExplorer_RightPanel_Projects_Developement = () => {
 
 
  function on_double_1(){
+    document.getElementById('Projects-Developement').style.display = "none"
+    document.getElementById('Projects-Developement-RateTheSkin').style.display = ""
+    
+ }
+ function on_double_2(){
+    
+ }
+ function on_double_3(){
+    
+ }
+ function on_double_4(){
     
  }
 
@@ -103,7 +114,7 @@ const fileExplorer_RightPanel_Projects_Developement = () => {
     return(
         <div id='RightPanel-Portfolio-Subfolders-holder'>
 
-            <div id='RightPanel-Projects-Subfolders-Developement-RatingClients-holder'   className='folder-holder' onClick={go_blue_on_1}>
+            <div id='RightPanel-Projects-Subfolders-Developement-RatingClients-holder'   className='folder-holder' onClick={go_blue_on_1} onDoubleClick={on_double_1}>
                 <div id='RightPanel-Projects-Subfolders-Developement-RatingClients-icon' className='folder-icon'></div>
                 <div id='RightPanel-Projects-Subfolders-Developement-RatingClients-text' className='folder-text'>Rating Clients</div>
                 <div id='RightPanel-Projects-Subfolders-Developement-RatingClients-type' className='folder-type'>File Folder</div>
