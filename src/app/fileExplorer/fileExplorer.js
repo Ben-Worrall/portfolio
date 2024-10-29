@@ -12,6 +12,8 @@ import fileExplorer_RightPanel_AboutMe from './functions/fileExplorer-RightPanel
 import fileExplorer_RightPanel_Projects_Developement from './functions/fileExplorer-RightPanel-Projects-Developement';
 import Projects_Developement_RatingClients from './functions/Projects-Developement/Projects-Developement-RatingClients';
 import Projects_Developement_SkySurfer from './functions/Projects-Developement/Projects-Developement-SkySurfer';
+import Projects_Developement_Doors98 from './functions/Projects-Developement/Projects-Developement-Doors98';
+import Projects_Developement_RateTheSkin from './functions/Projects-Developement/Projects-Developement-RateTheSkin';
 
 
 
@@ -544,6 +546,8 @@ const FileExplorer = () => {
                 document.getElementById('Projects-Developement').style.display = ""
                 document.getElementById('Projects-Developement-RatingClients').style.display = "none"
                 document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+                document.getElementById('Projects-Developement-Doors98').style.display = "none"
+                document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
                 document.getElementById('navigate-bnt-back').title = "Projects"
                 test = true
                 
@@ -834,6 +838,13 @@ const FileExplorer = () => {
                 <div id="Projects-Developement-SkySurfer" className='rightpanel-object' style={{display:'none'}}>
                     {Projects_Developement_SkySurfer()}
                 </div>
+                <div id="Projects-Developement-Doors98" className='rightpanel-object' style={{display:'none'}}>
+                    {Projects_Developement_Doors98()}
+                </div>
+                <div id="Projects-Developement-RateTheSkin" className='rightpanel-object' style={{display:'none'}}>
+                    {Projects_Developement_RateTheSkin()}
+                </div>
+                
                 
 
             </div>

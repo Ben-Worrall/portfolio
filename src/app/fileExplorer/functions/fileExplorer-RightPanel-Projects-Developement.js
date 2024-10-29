@@ -101,9 +101,15 @@ const fileExplorer_RightPanel_Projects_Developement = () => {
     document.getElementById('navigate-bnt-back').title = "Projects-Developement"
  }
  function on_double_3(){
+    document.getElementById('Projects-Developement-Doors98').style.display = ""
+    document.getElementById('Projects-Developement').style.display = "none"
+    document.getElementById('navigate-bnt-back').title = "Projects-Developement"
     
  }
  function on_double_4(){
+    document.getElementById('Projects-Developement-RateTheSkin').style.display = ""
+    document.getElementById('Projects-Developement').style.display = "none"
+    document.getElementById('navigate-bnt-back').title = "Projects-Developement"
     
  }
 

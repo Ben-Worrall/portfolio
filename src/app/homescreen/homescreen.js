@@ -302,6 +302,8 @@ document.ontouchstart = filter;
   function CloseRenderApp(){
     document.getElementById('RenderApp-RatingClients').style.display = "none"
     document.getElementById('RenderApp-SkySurfer').style.display = "none"
+    document.getElementById('RenderApp-Doors98').style.display = "none"
+    document.getElementById('RenderApp-RateTheSkin').style.display = "none"
     document.getElementById('EXE-App').style.display = "none"
   }
 
@@ -452,6 +454,34 @@ document.ontouchstart = filter;
               </div>
               <div className='RenderApp-body'>
               <iframe src="https://ben-worrall.github.io/SkySurfer/" className='RenderApp-body-iframe'></iframe>
+              </div>
+            </div>
+            {/* Doors 98  */}
+            <div className='RenderApp' id='RenderApp-Doors98' style={{display:'none'}}>
+              <div className='RenderApp-top-bar'>
+                <div className='RenderApp-WebLink'>
+                  <a className='RenderApp-link' href='https://ben-worrall.github.io/Doors98/' target="_blank">https://ben-worrall.github.io/Doors98/</a>
+                </div>
+                <div className='RenderApp-top-buttons'>
+                  <button className='RenderApp-exit-button' onClick={CloseRenderApp}>X</button>
+                </div>
+              </div>
+              <div className='RenderApp-body'>
+              <iframe src="https://ben-worrall.github.io/Doors98/" className='RenderApp-body-iframe'></iframe>
+              </div>
+            </div>
+            {/* Rate the skin */}
+            <div className='RenderApp' id='RenderApp-RateTheSkin' style={{display:'none'}}>
+              <div className='RenderApp-top-bar'>
+                <div className='RenderApp-WebLink'>
+                  <a className='RenderApp-link' href='https://ben-worrall.github.io/RateTheSkin/' target="_blank">https://ben-worrall.github.io/RateTheSkin/</a>
+                </div>
+                <div className='RenderApp-top-buttons'>
+                  <button className='RenderApp-exit-button' onClick={CloseRenderApp}>X</button>
+                </div>
+              </div>
+              <div className='RenderApp-body'>
+              <iframe src="https://ben-worrall.github.io/RateTheSkin/" className='RenderApp-body-iframe'></iframe>
               </div>
             </div>
             
