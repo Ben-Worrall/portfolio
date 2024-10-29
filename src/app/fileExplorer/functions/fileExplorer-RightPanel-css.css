@@ -9,7 +9,7 @@
     background-image: url("/src/assets/icons/computer_explorer-4.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3.5%;
+    width: 4%;
     height: 100%;
     float: left;
     display: flex;
@@ -51,7 +51,7 @@
     background-image: url("/src/assets/icons/hard_disk_drive-2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3.5%;
+    width: 4%;
     height: 100%;
     float: left;
     display: flex;
@@ -92,8 +92,8 @@
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
-    height: 100%;
+    width: 4%;
+    height: 80%;
     float: left;
     display: flex;
     align-items: center;
@@ -125,8 +125,8 @@
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
-    height: 100%;
+    width: 4%;
+    height: 80%;
     float: left;
     display: flex;
     align-items: center;
@@ -158,8 +158,8 @@
     background-image: url("/src/assets/icons/document-0.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
-    height: 100%;
+    width: 4%;
+    height: 80%;
     float: left;
     display: flex;
     align-items: center;
@@ -206,7 +206,7 @@
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
+    width: 4%;
     height: 100%;
     float: left;
     display: flex;
@@ -238,7 +238,7 @@
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
+    width: 4%;
     height: 100%;
     float: left;
     display: flex;
@@ -276,7 +276,7 @@
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
+    width: 4%;
     height: 100%;
     float: left;
     display: flex;
@@ -308,7 +308,7 @@
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
+    width:4%;
     height: 100%;
     float: left;
     display: flex;
@@ -351,7 +351,7 @@
     background-image: url("/src/assets/icons/folder-img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3%;
+    width: 4%;
     height: 100%;
     float: left;
     display: flex;
@@ -374,40 +374,43 @@
     height: 100%;
 }
 
-#RightPanel-Projects-Developement-RateTheSkin-HOLDER{
+#Projects-Developement-RatingClients-HOLDER{
     font-weight: bold;
     width: 100%;
     height: 16%;
     margin-top: 0.5%;
+    
 }
-.RightPanel-Projects-Developement-file-holder{
+.Projects-Developement-file-holder{
     width: 100%;
     height: 50%;
     margin-top: 1%;
 }
-.RightPanel-Projects-Developement-file-icon{
+.Projects-Developement-file-icon{
     background-image: url("/src/assets/icons/document-0.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3.5%;
+    width: 4%;
     height: 90%;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 1 / 1;
 }
-.RightPanel-Projects-Developement-fileEXE-icon{
+.Projects-Developement-fileEXE-icon{
     background-image: url("/src/assets/icons/exe.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 3.5%;
+    width: 4%;
     height: 90%;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
+    aspect-ratio: 1 / 1;
 }
-.RightPanel-Projects-Developement-file-text{
+.Projects-Developement-file-text{
     float: left;
     width: 38%;
     display: flex;
@@ -415,7 +418,7 @@
     margin-left: 0.5%;
     height: 100%;
 }
-.RightPanel-Projects-Developement-file-size{
+.Projects-Developement-file-size{
     float: left;
     width: 20.5%;
     display: flex;
@@ -423,7 +426,7 @@
     justify-content: right;
     height: 100%;
 }
-.RightPanel-Projects-Developement-file-type{
+.Projects-Developement-file-type{
     float: right;
     width: 35.5%;
     display: flex;

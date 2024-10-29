@@ -300,7 +300,8 @@ document.ontouchstart = filter;
   });
 
   function CloseRenderApp(){
-    document.getElementById('RenderApp').style.display = "none"
+    document.getElementById('RenderApp-RatingClients').style.display = "none"
+    document.getElementById('EXE-App').style.display = "none"
   }
 
 
@@ -371,9 +372,13 @@ document.ontouchstart = filter;
                        <div id='fileExplorer-icon'></div>
                        <div id='fileExplorer-text'>Exploring - MyComputer</div>
                     </div>
-                    <div id="EXE-App">
+                    <div id="EXE-App" style={{display:'none'}}>
                        <div id='EXE-App-icon'></div>
                        <div id='EXE-App-text'>Render App.exe</div>
+                    </div>
+                    <div id="ReadMe-App" style={{display:'none'}}>
+                       <div id='ReadMe-App-icon'></div>
+                       <div id='ReadMe-App-text'>ReadMe.txt</div>
                     </div>
                     
                     
@@ -418,20 +423,21 @@ document.ontouchstart = filter;
 
             </div>
 
-
-            <div id='RenderApp' style={{display:'none'}}>
-              <div id='RenderApp-top-bar'>
-                <div id='RenderApp-WebLink'>
-                  <a id='RenderApp-link' href='https://ratingclients.netlify.app/' target="_blank">https://ratingclients.netlify.app/</a>
+            {/* Rating Clients */}
+            <div className='RenderApp' id='RenderApp-RatingClients' style={{display:'none'}}>
+              <div className='RenderApp-top-bar'>
+                <div className='RenderApp-WebLink'>
+                  <a className='RenderApp-link' href='https://ratingclients.netlify.app/' target="_blank">https://ratingclients.netlify.app/</a>
                 </div>
-                <div id='RenderApp-top-buttons'>
-                  <button id='RenderApp-exit-button' onClick={CloseRenderApp}>X</button>
+                <div className='RenderApp-top-buttons'>
+                  <button className='RenderApp-exit-button' onClick={CloseRenderApp}>X</button>
                 </div>
               </div>
-              <div id='RenderApp-body'>
-              <iframe src="https://ratingclients.netlify.app/" id='RenderApp-body-iframe'></iframe>
+              <div className='RenderApp-body'>
+              <iframe src="https://ratingclients.netlify.app/" className='RenderApp-body-iframe'></iframe>
               </div>
             </div>
+            
 
 
 

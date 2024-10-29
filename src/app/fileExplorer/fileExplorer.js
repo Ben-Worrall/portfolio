@@ -10,7 +10,7 @@ import fileExplorer_RightPanel_Certifications from './functions/fileExplorer-Rig
 import fileExplorer_RightPanel_BenW from './functions/fileExplorer-RightPanel-BenW';
 import fileExplorer_RightPanel_AboutMe from './functions/fileExplorer-RightPanel-AboutMe';
 import fileExplorer_RightPanel_Projects_Developement from './functions/fileExplorer-RightPanel-Projects-Developement';
-import Projects_Developement_RateTheSkin from './functions/Projects-Developement/Projects-Developement-RateTheSkin';
+import Projects_Developement_RatingClients from './functions/Projects-Developement/Projects-Developement-RatingClients';
 
 
 
@@ -536,6 +536,16 @@ const FileExplorer = () => {
                 test = true
                 
             }
+            if(document.getElementById('navigate-bnt-back').title == "Projects-Developement"){
+                console.log('check portfolio')
+               
+                
+                document.getElementById('Projects-Developement').style.display = ""
+                document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "Portfolio"
+                test = true
+                
+            }
             
             else{
                 test = true
@@ -816,8 +826,8 @@ const FileExplorer = () => {
                 <div id="Projects-Developement" className='rightpanel-object' style={{display:'none'}}>
                     {fileExplorer_RightPanel_Projects_Developement()}
                 </div>
-                <div id="Projects-Developement-RateTheSkin" className='rightpanel-object' style={{display:'none'}}>
-                    {Projects_Developement_RateTheSkin()}
+                <div id="Projects-Developement-RatingClients" className='rightpanel-object' style={{display:'none'}}>
+                    {Projects_Developement_RatingClients()}
                 </div>
                 
 
