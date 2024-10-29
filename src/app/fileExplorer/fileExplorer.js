@@ -11,6 +11,7 @@ import fileExplorer_RightPanel_BenW from './functions/fileExplorer-RightPanel-Be
 import fileExplorer_RightPanel_AboutMe from './functions/fileExplorer-RightPanel-AboutMe';
 import fileExplorer_RightPanel_Projects_Developement from './functions/fileExplorer-RightPanel-Projects-Developement';
 import Projects_Developement_RatingClients from './functions/Projects-Developement/Projects-Developement-RatingClients';
+import Projects_Developement_SkySurfer from './functions/Projects-Developement/Projects-Developement-SkySurfer';
 
 
 
@@ -542,7 +543,8 @@ const FileExplorer = () => {
                 
                 document.getElementById('Projects-Developement').style.display = ""
                 document.getElementById('Projects-Developement-RatingClients').style.display = "none"
-                document.getElementById('navigate-bnt-back').title = "Portfolio"
+                document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "Projects"
                 test = true
                 
             }
@@ -828,6 +830,9 @@ const FileExplorer = () => {
                 </div>
                 <div id="Projects-Developement-RatingClients" className='rightpanel-object' style={{display:'none'}}>
                     {Projects_Developement_RatingClients()}
+                </div>
+                <div id="Projects-Developement-SkySurfer" className='rightpanel-object' style={{display:'none'}}>
+                    {Projects_Developement_SkySurfer()}
                 </div>
                 
 

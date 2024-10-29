@@ -301,6 +301,7 @@ document.ontouchstart = filter;
 
   function CloseRenderApp(){
     document.getElementById('RenderApp-RatingClients').style.display = "none"
+    document.getElementById('RenderApp-SkySurfer').style.display = "none"
     document.getElementById('EXE-App').style.display = "none"
   }
 
@@ -435,6 +436,22 @@ document.ontouchstart = filter;
               </div>
               <div className='RenderApp-body'>
               <iframe src="https://ratingclients.netlify.app/" className='RenderApp-body-iframe'></iframe>
+              </div>
+            </div>
+
+
+            {/* SkySurfer */}
+            <div className='RenderApp' id='RenderApp-SkySurfer' style={{display:'none'}}>
+              <div className='RenderApp-top-bar'>
+                <div className='RenderApp-WebLink'>
+                  <a className='RenderApp-link' href='https://ben-worrall.github.io/SkySurfer/' target="_blank">https://ben-worrall.github.io/SkySurfer/</a>
+                </div>
+                <div className='RenderApp-top-buttons'>
+                  <button className='RenderApp-exit-button' onClick={CloseRenderApp}>X</button>
+                </div>
+              </div>
+              <div className='RenderApp-body'>
+              <iframe src="https://ben-worrall.github.io/SkySurfer/" className='RenderApp-body-iframe'></iframe>
               </div>
             </div>
             
