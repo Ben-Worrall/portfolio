@@ -49,7 +49,11 @@ window.addEventListener('click',(e)=>{
         document.getElementById('EXE-App').style.display = ""
   }
   function open_on_doouble_2(){
-
+document.getElementById('ReadMe-App-HOLDER').style.display = ""
+document.getElementById('ReadMe-Body-RatingClients').style.display = ""
+document.getElementById('ReadMe-TopBar-URL-RatingClients').style.display = ""
+document.getElementById('ReadMe-TopBar-text-AppTitle').innerHTML = "Rating Clients"
+    document.getElementById('ReadMe-App').style.display = ""
   }
 
 

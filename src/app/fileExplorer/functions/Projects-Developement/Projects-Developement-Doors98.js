@@ -48,7 +48,11 @@ window.addEventListener('click',(e)=>{
     document.getElementById('EXE-App').style.display = ""
   }
   function open_on_doouble_2(){
-
+    document.getElementById('ReadMe-App-HOLDER').style.display = ""
+    document.getElementById('ReadMe-Body-Doors98').style.display = ""
+    document.getElementById('ReadMe-TopBar-URL-Doors98').style.display = ""
+    document.getElementById('ReadMe-TopBar-text-AppTitle').innerHTML = "Doors 98"
+    document.getElementById('ReadMe-App').style.display = ""
   }
 
 

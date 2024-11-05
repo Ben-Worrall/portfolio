@@ -48,7 +48,11 @@ window.addEventListener('click',(e)=>{
     document.getElementById('EXE-App').style.display = ""
   }
   function open_on_doouble_2(){
-
+    document.getElementById('ReadMe-App-HOLDER').style.display = ""
+    document.getElementById('ReadMe-Body-SkySurfer').style.display = ""
+    document.getElementById('ReadMe-TopBar-URL-SkySurfer').style.display = ""
+    document.getElementById('ReadMe-TopBar-text-AppTitle').innerHTML = "Sky Surfer"
+        document.getElementById('ReadMe-App').style.display = ""
   }
 
 

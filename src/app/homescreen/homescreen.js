@@ -2,7 +2,10 @@ import './homescreen.css'
 import { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import FileExplorer from '../fileExplorer/fileExplorer';
-
+import RatingClients_ReadMe from '../fileExplorer/functions/Projects-Developement/RatingClients-ReadMe';
+import Doors98_ReadMe from '../fileExplorer/functions/Projects-Developement/Door98-ReadMe';
+import RateTheSkin_ReadMe from '../fileExplorer/functions/Projects-Developement/RateTheSkin-ReadMe';
+import SkySurfer_ReadMe from '../fileExplorer/functions/Projects-Developement/SkySurfer-ReadMe';
 
 function Homescreen (){
 
@@ -306,6 +309,21 @@ document.ontouchstart = filter;
     document.getElementById('RenderApp-RateTheSkin').style.display = "none"
     document.getElementById('EXE-App').style.display = "none"
   }
+  function CloseReadMe(){
+    document.getElementById('ReadMe-App-HOLDER').style.display = "none"
+
+    document.getElementById('ReadMe-Body-RatingClients').style.display = "none"
+    document.getElementById('ReadMe-Body-SkySurfer').style.display = "none"
+    document.getElementById('ReadMe-Body-Doors98').style.display = "none"
+    document.getElementById('ReadMe-Body-RateTheSkin').style.display = "none"
+
+    document.getElementById('ReadMe-TopBar-URL-Doors98').style.display = "none"
+    document.getElementById('ReadMe-TopBar-URL-RateTheSkin').style.display = "none"
+    document.getElementById('ReadMe-TopBar-URL-SkySurfer').style.display = "none"
+    document.getElementById('ReadMe-TopBar-URL-RatingClients').style.display = "none"
+
+    document.getElementById('ReadMe-App').style.display = "none"
+  }
 
 
     return(
@@ -483,6 +501,43 @@ document.ontouchstart = filter;
               <div className='RenderApp-body'>
               <iframe src="https://ben-worrall.github.io/RateTheSkin/" className='RenderApp-body-iframe'></iframe>
               </div>
+            </div>
+
+
+
+            {/* READ ME */}
+            <div className='ReadMe-App' id='ReadMe-App-HOLDER' onClick={CloseReadMe} style={{display:'none'}}>
+
+              <div className='ReadMe-TopBar'>
+
+                    <div className='ReadMe-TopBar-text'>
+                      <div className='ReadMe-TopBar-text-AppTitle' id='ReadMe-TopBar-text-AppTitle'></div>
+                      <div className='ReadMe-TopBar-text-AppLink'>
+                      <a className='ReadMe-TopBar-text-link' id='ReadMe-TopBar-URL-Doors98' href='https://ben-worrall.github.io/Doors98/' target="_blank" style={{display:'none'}}>https://ben-worrall.github.io/Doors98/</a>
+                      <a className='ReadMe-TopBar-text-link' id='ReadMe-TopBar-URL-RateTheSkin' href='https://ben-worrall.github.io/RateTheSkin/' target="_blank" style={{display:'none'}}>https://ben-worrall.github.io/RateTheSkin/</a>
+                      <a className='ReadMe-TopBar-text-link' id='ReadMe-TopBar-URL-SkySurfer' href='https://ben-worrall.github.io/SkySurfer/' target="_blank" style={{display:'none'}}>https://ben-worrall.github.io/SkySurfer/</a>
+                      <a className='ReadMe-TopBar-text-link' id='ReadMe-TopBar-URL-RatingClients' href='https://ratingclients.netlify.app/' target="_blank" style={{display:'none'}}>https://ratingclients.netlify.app/</a>
+                      </div>
+                    </div>
+
+                    <div className='ReadMe-TopBar-button'>
+                      <button className='ReadMe-TopBar-ExitBNT'>X</button>
+                    </div>
+              </div>
+
+              <div className='ReadMe-Body' id='ReadMe-Body-RatingClients' style={{display:'none'}}>
+              {RatingClients_ReadMe()}
+              </div>
+              <div className='ReadMe-Body' id='ReadMe-Body-RateTheSkin' style={{display:'none'}}>
+              {RateTheSkin_ReadMe()}
+              </div>
+              <div className='ReadMe-Body' id='ReadMe-Body-Doors98' style={{display:'none'}}>
+              {Doors98_ReadMe()}
+              </div>
+              <div className='ReadMe-Body' id='ReadMe-Body-SkySurfer' style={{display:'none'}}>
+              {SkySurfer_ReadMe()}
+              </div>
+
             </div>
             
 

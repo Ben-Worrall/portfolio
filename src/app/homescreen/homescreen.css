@@ -556,3 +556,86 @@ height: 100%;
 
 
 
+.ReadMe-App{
+    width: 82%;
+    height: 82%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 9%;
+    top: 7%;
+    border-left: rgb(0, 0, 0) solid 0.4vw;
+    border-top: rgb(0, 0, 0) solid 0.4vw;
+    border-right:rgb(156, 156, 156) solid 0.4vw;
+    border-bottom:rgb(156, 156, 156) solid 0.4vw;
+    overflow: hidden;
+}
+.ReadMe-TopBar{
+    width: 100%;
+    height: 7.5%;
+    background-color: #c9c9c9;
+}
+.ReadMe-TopBar-text{
+    width: 60%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+.ReadMe-TopBar-text-AppTitle{
+float: left;
+width: 30%;
+height: 100%;
+display: flex;
+align-items: center;
+margin-left: 5%;
+}
+.ReadMe-TopBar-text-AppLink{
+float: right;
+width: 40%;
+height: 100%;
+display: flex;
+align-items: center;
+
+}
+.ReadMe-TopBar-text-link{
+    color: black;
+    text-decoration: none;
+}
+.ReadMe-TopBar-button{
+width: 40%;
+float: right;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: right;
+}
+.ReadMe-TopBar-ExitBNT{
+    float: right;
+    background-color: red;
+    color: white;
+    margin-right: 2.5%;
+    width: 7.5%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ReadMe-Body{
+width: 100%;
+height: 92.5%;
+word-spacing: 0.1vh;
+letter-spacing: 0.1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
