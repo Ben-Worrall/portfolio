@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('/fonts/Windows98Font.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/Windows98Font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/Windows98Font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/Windows98Font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/fonts/Windows98Font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/Windows98Font.svg') format('svg'); /* Legacy iOS */
+
+}
+
+
+
 #Body{
     background-color: rgb(0, 0, 0);
     overflow: hidden;
@@ -59,7 +72,7 @@
     font-size: 4vh;
     background-color: rgb(203,199,190);
     width: 3%;
-    font-family: Consolas,monaco,monospace;
+    font-family:  'MyWebFont', Fallback, sans-serif;
     text-align: center;
   position: absolute;
   right: 0;
@@ -75,7 +88,7 @@
       font-size: 3.5vh;
       background-color: rgb(203,199,190);
       width: 3%;
-      font-family: Consolas,monaco,monospace;
+      font-family:  'MyWebFont', Fallback, sans-serif;
       text-align: center;
   position: absolute;
   right: 0;
@@ -91,7 +104,7 @@
         font-size: 4vh;
         background-color: rgb(203,199,190);
         width: 3%;
-        font-family: Consolas,monaco,monospace;
+        font-family:  'MyWebFont', Fallback, sans-serif;
         text-align: center;
     position: absolute;
     right: 0;
@@ -102,7 +115,7 @@
   left: 0;
   color: white;
   font-size: 5vh;
-  font-family: Consolas,monaco,monospace;
+  font-family:  'MyWebFont', Fallback, sans-serif;
   }
   
   
@@ -121,7 +134,7 @@
   
   #loadBar{
   
-  font-family: Consolas,monaco,monospace;
+    font-family:  'MyWebFont', Fallback, sans-serif;
   width: 40%;
   color: blue;
   background-color: rgb(203,199,190);
@@ -150,7 +163,7 @@
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     color: rgb(0, 0, 0);
     
-    font-family: monospace;
+    font-family:  'MyWebFont', Fallback, sans-serif;
   letter-spacing: .15em; /* Adjust as needed */
   text-align: center;
   font-size: 7.5vh;
