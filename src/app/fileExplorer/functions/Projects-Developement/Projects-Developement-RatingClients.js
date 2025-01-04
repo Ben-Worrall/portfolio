@@ -10,7 +10,7 @@ window.addEventListener('click',(e)=>{
         holder.style.backgroundColor = 'white'
         holder.style.color = 'black'
         holder.style.outline = ''
-        
+         document.getElementById('FileExplorer-App').style.display = ""
     }
     if(e.target.id !== "Projects-Developement-RatingClients-ReadMe-holder" && e.target.id !== "Projects-Developement-RatingClients-ReadMe-icon" && e.target.id !== "Projects-Developement-RatingClients-ReadMe-text" ){
         let holder = document.getElementById('Projects-Developement-RatingClients-ReadMe-holder')
@@ -47,6 +47,8 @@ window.addEventListener('click',(e)=>{
   function open_on_doouble_1(){
         document.getElementById('RenderApp-RatingClients').style.display = ""
         document.getElementById('EXE-App').style.display = ""
+         document.getElementById('FileExplorer-App').style.display = "none"
+        document.getElementById('fileExplorer').style.display = "none"
   }
   function open_on_doouble_2(){
 document.getElementById('ReadMe-App-HOLDER').style.display = ""
@@ -54,6 +56,8 @@ document.getElementById('ReadMe-Body-RatingClients').style.display = ""
 document.getElementById('ReadMe-TopBar-URL-RatingClients').style.display = ""
 document.getElementById('ReadMe-TopBar-text-AppTitle').innerHTML = "Rating Clients"
     document.getElementById('ReadMe-App').style.display = ""
+    document.getElementById('FileExplorer-App').style.display = "none"
+    document.getElementById('fileExplorer').style.display = "none"
   }
 
 

@@ -45,6 +45,7 @@
     color: black;
     text-decoration: none;
     user-select: none;
+    white-space: nowrap;
 }
 
 
@@ -115,6 +116,7 @@
       font-size: 1.25vw;
       float: right;
       margin-right: 5%;
+      white-space: nowrap;
 }
 
 
@@ -159,6 +161,7 @@
     align-items: center;
     text-align: center;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 
@@ -207,7 +210,8 @@
     display: flex;
     align-items: center;
     margin-top: 5%;
-    width: 90%;
+    width: 95%;
+    white-space: nowrap;
 }
 
 
@@ -296,7 +300,7 @@
 
 
 #LeftPanel-Body-ThirdLayer-Certifications-holder{
-    width: 65%;
+    width: 75%;
     float: left;
     height: 100%;
     display: flex;
@@ -363,6 +367,7 @@
     text-align: center;
     font-weight: bold;
     margin-top: 1%;
+    white-space: nowrap;
 }
 #LeftPanel-Body-ThirdLayer-Projects-text{
     display: flex;
@@ -370,6 +375,7 @@
     text-align: center;
     font-weight: bold;
     margin-top: 1%;
+    white-space: nowrap;
 }
 #LeftPanel-Body-ThirdLayer-AboutMe-text{
     display: flex;
@@ -377,6 +383,7 @@
     text-align: center;
     font-weight: bold;
     margin-top: 1%;
+    white-space: nowrap;
 }
 
 

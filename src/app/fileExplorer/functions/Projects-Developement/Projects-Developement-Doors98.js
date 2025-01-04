@@ -46,6 +46,8 @@ window.addEventListener('click',(e)=>{
   function open_on_doouble_1(){
     document.getElementById('RenderApp-Doors98').style.display = ""
     document.getElementById('EXE-App').style.display = ""
+     document.getElementById('FileExplorer-App').style.display = "none"
+        document.getElementById('fileExplorer').style.display = "none"
   }
   function open_on_doouble_2(){
     document.getElementById('ReadMe-App-HOLDER').style.display = ""
@@ -53,6 +55,8 @@ window.addEventListener('click',(e)=>{
     document.getElementById('ReadMe-TopBar-URL-Doors98').style.display = ""
     document.getElementById('ReadMe-TopBar-text-AppTitle').innerHTML = "Doors 98"
     document.getElementById('ReadMe-App').style.display = ""
+     document.getElementById('FileExplorer-App').style.display = "none"
+     document.getElementById('fileExplorer').style.display = "none"
   }
 
 

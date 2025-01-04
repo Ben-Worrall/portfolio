@@ -448,6 +448,7 @@ document.ontouchstart = filter;
             <div className='RenderApp' id='RenderApp-RatingClients' style={{display:'none'}}>
               <div className='RenderApp-top-bar'>
                 <div className='RenderApp-WebLink'>
+                <a className="RenderApp-link-text">Link to full website:</a>
                   <a className='RenderApp-link' href='https://ratingclients.netlify.app/' target="_blank">https://ratingclients.netlify.app/</a>
                 </div>
                 <div className='RenderApp-top-buttons'>
@@ -464,6 +465,7 @@ document.ontouchstart = filter;
             <div className='RenderApp' id='RenderApp-SkySurfer' style={{display:'none'}}>
               <div className='RenderApp-top-bar'>
                 <div className='RenderApp-WebLink'>
+                  <a className="RenderApp-link-text">Link to full website:</a>
                   <a className='RenderApp-link' href='https://ben-worrall.github.io/SkySurfer/' target="_blank">https://ben-worrall.github.io/SkySurfer/</a>
                 </div>
                 <div className='RenderApp-top-buttons'>
@@ -478,6 +480,7 @@ document.ontouchstart = filter;
             <div className='RenderApp' id='RenderApp-Doors98' style={{display:'none'}}>
               <div className='RenderApp-top-bar'>
                 <div className='RenderApp-WebLink'>
+                <a className="RenderApp-link-text">Link to full website:</a>
                   <a className='RenderApp-link' href='https://ben-worrall.github.io/Doors98/' target="_blank">https://ben-worrall.github.io/Doors98/</a>
                 </div>
                 <div className='RenderApp-top-buttons'>
@@ -492,6 +495,7 @@ document.ontouchstart = filter;
             <div className='RenderApp' id='RenderApp-RateTheSkin' style={{display:'none'}}>
               <div className='RenderApp-top-bar'>
                 <div className='RenderApp-WebLink'>
+                <a className="RenderApp-link-text">Link to full website:</a>
                   <a className='RenderApp-link' href='https://ben-worrall.github.io/RateTheSkin/' target="_blank">https://ben-worrall.github.io/RateTheSkin/</a>
                 </div>
                 <div className='RenderApp-top-buttons'>
