@@ -308,6 +308,7 @@ document.ontouchstart = filter;
     document.getElementById('RenderApp-Doors98').style.display = "none"
     document.getElementById('RenderApp-RateTheSkin').style.display = "none"
     document.getElementById('EXE-App').style.display = "none"
+    document.getElementById('fileExplorer').style.display = ""
   }
   function CloseReadMe(){
     document.getElementById('ReadMe-App-HOLDER').style.display = "none"

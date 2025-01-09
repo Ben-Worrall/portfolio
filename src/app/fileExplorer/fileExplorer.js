@@ -99,7 +99,16 @@ const FileExplorer = () => {
             document.getElementById('Projects').style.display = "none"
             document.getElementById('AboutMe').style.display = "none"
             document.getElementById('arrow-body').style.display = "none"
+
+            
+            document.getElementById('Projects-Developement').style.display = "none"
+            document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+            document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+            document.getElementById('Projects-Developement-Doors98').style.display = "none"
+            document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
         })
+
+        //--------------------------------------------------------------------------------//
 
         //benW
         document.getElementById('LeftPanel-FirstLayer-BenW-holder').addEventListener('click', function(){
@@ -109,7 +118,15 @@ const FileExplorer = () => {
             document.getElementById('Certifications').style.display = "none"
             document.getElementById('Projects').style.display = "none"
             document.getElementById('AboutMe').style.display = "none"
+
+            document.getElementById('Projects-Developement').style.display = "none"
+            document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+            document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+            document.getElementById('Projects-Developement-Doors98').style.display = "none"
+            document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
         })
+
+        //--------------------------------------------------------------------------------//
 
         //portfolio
         document.getElementById('LeftPanel-SecondLayer-Portfolio-holder').addEventListener('click', function(){
@@ -119,7 +136,15 @@ const FileExplorer = () => {
             document.getElementById('Certifications').style.display = "none"
             document.getElementById('Projects').style.display = "none"
             document.getElementById('AboutMe').style.display = "none"
+
+           document.getElementById('Projects-Developement').style.display = "none"
+           document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+            document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+            document.getElementById('Projects-Developement-Doors98').style.display = "none"
+            document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
         })
+
+        //--------------------------------------------------------------------------------//
 
         //certuifications
         document.getElementById('LeftPanel-Body-ThirdLayer-Certifications-holder').addEventListener('click', function(){
@@ -129,9 +154,24 @@ const FileExplorer = () => {
             document.getElementById('Portfolio').style.display = "none"
             document.getElementById('Projects').style.display = "none"
             document.getElementById('AboutMe').style.display = "none"
+
+            document.getElementById('Projects-Developement').style.display = "none"
+            document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+            document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+            document.getElementById('Projects-Developement-Doors98').style.display = "none"
+            document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
         })
+
+        //--------------------------------------------------------------------------------//
+
             //cyber sec
+
+        //--------------------------------------------------------------------------------//
+
             //dev
+
+
+        //--------------------------------------------------------------------------------//
 
         //projects
         document.getElementById('LeftPanel-Body-ThirdLayer-Projects-holder').addEventListener('click', function(){
@@ -141,9 +181,37 @@ const FileExplorer = () => {
             document.getElementById('Portfolio').style.display = "none"
             document.getElementById('Certifications').style.display = "none"
             document.getElementById('AboutMe').style.display = "none"
+
+             document.getElementById('Projects-Developement').style.display = "none"
+             document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+            document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+            document.getElementById('Projects-Developement-Doors98').style.display = "none"
+            document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
         })
+
+        //--------------------------------------------------------------------------------//
             //cyber sec
+
+
             //dev
+            document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').addEventListener('click', function(){
+                document.getElementById('Projects-Developement').style.display = ""
+                document.getElementById('Projects').style.display = "none"
+                document.getElementById('Desktop').style.display = "none"
+                document.getElementById('BenW').style.display = "none"
+                document.getElementById('Portfolio').style.display = "none"
+                document.getElementById('Certifications').style.display = "none"
+                document.getElementById('AboutMe').style.display = "none"
+
+
+                document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+                document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+                document.getElementById('Projects-Developement-Doors98').style.display = "none"
+                document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
+    
+            })
+
+
 
         //about me
         document.getElementById('LeftPanel-Body-ThirdLayer-AboutMe-holder').addEventListener('click', function(){
@@ -153,6 +221,13 @@ const FileExplorer = () => {
             document.getElementById('Portfolio').style.display = "none"
             document.getElementById('Certifications').style.display = "none"
             document.getElementById('Projects').style.display = "none"
+
+            document.getElementById('Projects-Developement').style.display = "none"
+            document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+            document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+            document.getElementById('Projects-Developement-Doors98').style.display = "none"
+            document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
+
         })
 
 
