@@ -24,6 +24,33 @@ body{
 
 
 
+.RenderAppCert{
+width: 60%;
+ height: 90%;
+ background-color: rgb(255, 255, 255);
+ position: absolute;
+ left: 20%;
+ top: 3%;
+ border-left: rgb(0, 0, 0) solid 0.4vw;
+ border-top: rgb(0, 0, 0) solid 0.4vw;
+ border-right:rgb(156, 156, 156) solid 0.4vw;
+ border-bottom:rgb(156, 156, 156) solid 0.4vw;
+ overflow: hidden;
+}
+.CertImage{
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    
+    bottom: 0;
+}
+#CertImageA11{
+    background-image: url("/src/assets/ComptiaA+11.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 
 
 

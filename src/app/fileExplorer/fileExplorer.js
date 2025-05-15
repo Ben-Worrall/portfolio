@@ -15,7 +15,8 @@ import Projects_Developement_SkySurfer from './functions/Projects-Developement/P
 import Projects_Developement_Doors98 from './functions/Projects-Developement/Projects-Developement-Doors98';
 import Projects_Developement_RateTheSkin from './functions/Projects-Developement/Projects-Developement-RateTheSkin';
 
-
+import fileExplorer_RightPanel_Certifications_CyberSec from './functions/Certifications-CyberSec/CyberSecCert-Certs';
+import Certificates_CyberSec_ComptiaA from './functions/Certifications-CyberSec/Cert-CyberSec-ComptiaA';
 
 
 
@@ -165,6 +166,24 @@ const FileExplorer = () => {
         //--------------------------------------------------------------------------------//
 
             //cyber sec
+                document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').addEventListener('click', function(){
+                document.getElementById('Projects-Developement').style.display = ""
+                document.getElementById('Projects').style.display = "none"
+                document.getElementById('Desktop').style.display = "none"
+                document.getElementById('BenW').style.display = "none"
+                document.getElementById('Portfolio').style.display = "none"
+                document.getElementById('Certifications').style.display = "none"
+                document.getElementById('AboutMe').style.display = "none"
+
+
+                document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+                document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+                document.getElementById('Projects-Developement-Doors98').style.display = "none"
+                document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
+    
+            })
+
+
 
         //--------------------------------------------------------------------------------//
 
@@ -904,9 +923,14 @@ const FileExplorer = () => {
                 <div id="AboutMe" className='rightpanel-object' style={{display:'none'}}>
                     {fileExplorer_RightPanel_AboutMe()}
                 </div>
+                <div id="Certificates-CyberSec" className='rightpanel-object' style={{display:'none'}}>
+                    {fileExplorer_RightPanel_Certifications_CyberSec()}
+                </div>
+                
                 <div id="Projects-Developement" className='rightpanel-object' style={{display:'none'}}>
                     {fileExplorer_RightPanel_Projects_Developement()}
                 </div>
+        
                 <div id="Projects-Developement-RatingClients" className='rightpanel-object' style={{display:'none'}}>
                     {Projects_Developement_RatingClients()}
                 </div>
@@ -919,7 +943,9 @@ const FileExplorer = () => {
                 <div id="Projects-Developement-RateTheSkin" className='rightpanel-object' style={{display:'none'}}>
                     {Projects_Developement_RateTheSkin()}
                 </div>
-                
+                <div id="Certificates_CyberSec_ComptiaA" className='rightpanel-object' style={{display:'none'}}>
+                    {Certificates_CyberSec_ComptiaA()}
+                </div>
                 
 
             </div>

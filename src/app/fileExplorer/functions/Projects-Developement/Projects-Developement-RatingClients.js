@@ -10,7 +10,7 @@ window.addEventListener('click',(e)=>{
         holder.style.backgroundColor = 'white'
         holder.style.color = 'black'
         holder.style.outline = ''
-         document.getElementById('FileExplorer-App').style.display = ""
+         
     }
     if(e.target.id !== "Projects-Developement-RatingClients-ReadMe-holder" && e.target.id !== "Projects-Developement-RatingClients-ReadMe-icon" && e.target.id !== "Projects-Developement-RatingClients-ReadMe-text" ){
         let holder = document.getElementById('Projects-Developement-RatingClients-ReadMe-holder')

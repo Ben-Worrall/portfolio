@@ -12,16 +12,18 @@ function Homescreen (){
 
 
 
+
+ const [enabled, setEnabled] = useState(true); // Toggle control
   
   useEffect(() => {
-    
 
+   if (document.getElementById('FileExplorer-App').style.display === ""){
 
-
-
+    if (!enabled) return
     //function for dragging the app
 
 function filter(e) {
+ 
   let target = e.target;
   
   if (target.id === "Exploring-top-bar" || target.id === "button-holder-top-bar") {
@@ -296,11 +298,60 @@ document.ontouchstart = filter;
   document.getElementById('FileExplorer-App').onmouseover = hover
 
 
+} else {
+  return
+}
+  }, [enabled]);
 
-  
 
 
-  });
+    useEffect(() => {
+    const renderApps = document.querySelectorAll(".RenderApp, .RenderAppCert");
+
+    if (!renderApps.length) return;
+
+    const observers = [];
+
+    // The function to run when any element becomes visible
+    const onVisible = (element) => {
+      const display = window.getComputedStyle(element).display;
+      if (display !== "none") {
+        console.log(`Element with ID ${element.id || "no-id"} is now visible`);
+        myFunction(element);
+      }
+    };
+
+    renderApps.forEach((el) => {
+      const observer = new MutationObserver(() => onVisible(el));
+      observer.observe(el, {
+        attributes: true,
+        attributeFilter: ["style", "class"], // Only watch for style/class changes
+      });
+      observers.push(observer);
+    });
+
+    return () => {
+      // Disconnect all observers on cleanup
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
+  function myFunction(el) {
+    setEnabled(false);
+    document.getElementById('fileExplorer').style.pointerEvents = "none"
+    // Your logic here when one of them becomes visible
+    
+  }
+useEffect(() => {
+  console.log("Enabled state changed to:", enabled);
+}, [enabled]);
+
+
+
+
+
+
+
 
   function CloseRenderApp(){
     document.getElementById('RenderApp-RatingClients').style.display = "none"
@@ -309,6 +360,14 @@ document.ontouchstart = filter;
     document.getElementById('RenderApp-RateTheSkin').style.display = "none"
     document.getElementById('EXE-App').style.display = "none"
     document.getElementById('fileExplorer').style.display = ""
+    //setEnabled(true)
+    document.getElementById('fileExplorer').style.pointerEvents = "auto"
+  }
+  function CloseRenderAppCert(){
+    document.getElementById('RenderApp-ComptiaA11').style.display = "none"
+    document.getElementById('fileExplorer').style.display = ""
+    //setEnabled(true)
+    document.getElementById('fileExplorer').style.pointerEvents = "auto"
   }
   function CloseReadMe(){
     document.getElementById('ReadMe-App-HOLDER').style.display = "none"
@@ -508,6 +567,7 @@ document.ontouchstart = filter;
               </div>
             </div>
 
+    
 
 
             {/* READ ME */}
@@ -543,10 +603,27 @@ document.ontouchstart = filter;
               {SkySurfer_ReadMe()}
               </div>
 
+
             </div>
             
 
+            {/* Certifications */}
 
+            {/* Comptia A+ 11 */}
+            <div className='RenderAppCert' id='RenderApp-ComptiaA11' style={{display:'none'}}>
+              <div className='RenderApp-top-bar'>
+                <div className='RenderApp-WebLink'>
+                
+                  <a className='RenderApp-link' href='https://www.certmetrics.com/comptia/electronic_certificate.aspx?cert=B842C6BE6F14638EFE200DAB03B68926O215B5DF57F324D28AF19D2C995E09049' target="_blank">Download Certificate</a>
+                </div>
+                <div className='RenderApp-top-buttons'>
+                  <button className='RenderApp-exit-button' onClick={CloseRenderAppCert}>X</button>
+                </div>
+              </div>
+              <div className='RenderApp-body' id='CertImageA11'>
+              
+              </div>
+            </div>
 
 
 

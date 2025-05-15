@@ -34,9 +34,19 @@ const fileExplorer_RightPanel_Certifications = () => {
         holder.style.outlineStyle = 'dotted'
     }
 
+
+
+    function on_double_1(){
+    
+    document.getElementById('Certificates-CyberSec').style.display = ""
+    document.getElementById('Certifications').style.display = "none"
+    document.getElementById('navigate-bnt-back').title = "Projects-Developement";
+
+ }
+
     return(
         <div id='RightPanel-Certifications-Subfolders-holder'>
-            <div id='RightPanel-Certifications-Subfolders-CyberSec-holder' onClick={go_blue_on_clickCyber}>
+            <div id='RightPanel-Certifications-Subfolders-CyberSec-holder' onClick={go_blue_on_clickCyber} onDoubleClick={on_double_1}>
                 <div id='RightPanel-Certifications-Subfolders-CyberSec-icon'></div>
                 <div id='RightPanel-Certifications-Subfolders-CyberSec-text'>Cyber Security</div>
                 <div id='RightPanel-Certifications-Subfolders-CyberSec-type'>File Folder</div>
