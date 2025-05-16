@@ -646,6 +646,35 @@ const FileExplorer = () => {
                 test = true
                 
             }
+            if(document.getElementById('navigate-bnt-back').title == "Certifications"){
+                console.log('check portfolio')
+               
+                
+                document.getElementById('Portfolio').style.display = ""
+                document.getElementById('Certifications').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "Portfolio"
+                test = true
+                
+            }
+            if(document.getElementById('navigate-bnt-back').title == "Certifications-CyberSec"){
+                console.log('check portfolio')
+               
+                
+                document.getElementById('Certifications').style.display = ""
+                document.getElementById('Certificates-CyberSec').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "Certifications"
+                test = true
+                
+            }
+            if(document.getElementById('navigate-bnt-back').title == "Certificates_CyberSec_ComptiaA"){
+                console.log('check portfolio')
+        
+                document.getElementById('Certificates-CyberSec').style.display = ""
+                document.getElementById('Certificates_CyberSec_ComptiaA').style.display = "none"
+                document.getElementById('navigate-bnt-back').title = "Certifications-CyberSec"
+                test = true
+                
+            }
             
             else{
                 test = true

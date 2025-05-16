@@ -5,20 +5,14 @@ function Certificates_CyberSec_ComptiaA(){
 
 //click anywhere else
 window.addEventListener('click',(e)=>{
-    if(e.target.id !== "Certificates-CyberSec-ComptiaA-holder" && e.target.id !== "Certificates-CyberSec-ComptiaA-icon" && e.target.id !== "Certificates-CyberSec-ComptiaA-text" ){
-        //let holder = document.getElementById('Certificates-CyberSec-ComptiaA-holder')
-        //holder.style.backgroundColor = 'white'
-        //holder.style.color = 'black'
-        //holder.style.outline = ''
+    if(e.target.id !== "Cert-CyberSec-ComptiaA-holder" && e.target.id !== "Cert-CyberSec-ComptiaA-icon" && e.target.id !== "Cert-CyberSec-ComptiaA-text" ){
+        let holder = document.getElementById('Cert-CyberSec-ComptiaA-holder')
+        holder.style.backgroundColor = 'white'
+        holder.style.color = 'black'
+        holder.style.outline = ''
         
     }
-    if(e.target.id !== "Certificates-CyberSec-ComptiaA-ReadMe-holder" && e.target.id !== "Certificates-CyberSec-ComptiaA-ReadMe-icon" && e.target.id !== "Certificates-CyberSec-ComptiaA-ReadMe-text" ){
-        //let holder = document.getElementById('Certificates-CyberSec-ComptiaA-ReadMe-holder')
-        //holder.style.backgroundColor = 'white'
-        //holder.style.color = 'black'
-        //holder.style.outline = ''
-        
-    }
+    
     
     
 })

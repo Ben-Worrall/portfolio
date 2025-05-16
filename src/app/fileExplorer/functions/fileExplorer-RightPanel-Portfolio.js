@@ -53,7 +53,7 @@ const fileExplorer_RightPanel_Portfolio = () => {
     function shownextfolderCert(){
         document.getElementById('Portfolio').style.display = "none"
         document.getElementById('Certifications').style.display = ""
-        document.getElementById('navigate-bnt-back').title = "Portfolio"
+        document.getElementById('navigate-bnt-back').title = "Certifications"
     }
     function shownextfolderProj(){
         document.getElementById('Portfolio').style.display = "none"

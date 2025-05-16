@@ -17,7 +17,7 @@ function Homescreen (){
   
   useEffect(() => {
 
-   if (document.getElementById('FileExplorer-App').style.display === ""){
+   if (document.getElementById('FileExplorer-App').style.display !== "none"){
 
     if (!enabled) return
     //function for dragging the app
@@ -305,46 +305,7 @@ document.ontouchstart = filter;
 
 
 
-    useEffect(() => {
-    const renderApps = document.querySelectorAll(".RenderApp, .RenderAppCert");
-
-    if (!renderApps.length) return;
-
-    const observers = [];
-
-    // The function to run when any element becomes visible
-    const onVisible = (element) => {
-      const display = window.getComputedStyle(element).display;
-      if (display !== "none") {
-        console.log(`Element with ID ${element.id || "no-id"} is now visible`);
-        myFunction(element);
-      }
-    };
-
-    renderApps.forEach((el) => {
-      const observer = new MutationObserver(() => onVisible(el));
-      observer.observe(el, {
-        attributes: true,
-        attributeFilter: ["style", "class"], // Only watch for style/class changes
-      });
-      observers.push(observer);
-    });
-
-    return () => {
-      // Disconnect all observers on cleanup
-      observers.forEach((observer) => observer.disconnect());
-    };
-  }, []);
-
-  function myFunction(el) {
-    setEnabled(false);
-    document.getElementById('fileExplorer').style.pointerEvents = "none"
-    // Your logic here when one of them becomes visible
     
-  }
-useEffect(() => {
-  console.log("Enabled state changed to:", enabled);
-}, [enabled]);
 
 
 
@@ -360,14 +321,16 @@ useEffect(() => {
     document.getElementById('RenderApp-RateTheSkin').style.display = "none"
     document.getElementById('EXE-App').style.display = "none"
     document.getElementById('fileExplorer').style.display = ""
+    document.getElementById('FileExplorer-App').style.display = ""
     //setEnabled(true)
-    document.getElementById('fileExplorer').style.pointerEvents = "auto"
+    document.getElementById('FileExplorer-App').style.pointerEvents = "auto"
   }
   function CloseRenderAppCert(){
     document.getElementById('RenderApp-ComptiaA11').style.display = "none"
     document.getElementById('fileExplorer').style.display = ""
+    document.getElementById('FileExplorer-App').style.display = ""
     //setEnabled(true)
-    document.getElementById('fileExplorer').style.pointerEvents = "auto"
+    document.getElementById('FileExplorer-App').style.pointerEvents = "auto"
   }
   function CloseReadMe(){
     document.getElementById('ReadMe-App-HOLDER').style.display = "none"
@@ -384,6 +347,23 @@ useEffect(() => {
 
     document.getElementById('ReadMe-App').style.display = "none"
   }
+
+
+const DownloadCert1 = async () => {
+  const response = await fetch('https://raw.githubusercontent.com/Ben-Worrall/portfolio/master/src/assets/ComptiaA+11.png');
+  const blob = await response.blob();
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'CompTIA-Aplus-1101-1102.png';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  URL.revokeObjectURL(url); // Cleanup
+};
+
 
 
     return(
@@ -614,7 +594,7 @@ useEffect(() => {
               <div className='RenderApp-top-bar'>
                 <div className='RenderApp-WebLink'>
                 
-                  <a className='RenderApp-link' href='https://www.certmetrics.com/comptia/electronic_certificate.aspx?cert=B842C6BE6F14638EFE200DAB03B68926O215B5DF57F324D28AF19D2C995E09049' target="_blank">Download Certificate</a>
+                  <a className='RenderApp-link' id='DownloadCertText' target="_blank" onClick={DownloadCert1}>Download Certificate</a>
                 </div>
                 <div className='RenderApp-top-buttons'>
                   <button className='RenderApp-exit-button' onClick={CloseRenderAppCert}>X</button>

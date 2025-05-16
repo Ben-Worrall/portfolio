@@ -48,7 +48,7 @@ const fileExplorer_RightPanel_Certifications_CyberSec = () => {
     
     document.getElementById('Certificates_CyberSec_ComptiaA').style.display = ""
     document.getElementById('Certificates-CyberSec').style.display = "none"
-    document.getElementById('navigate-bnt-back').title = ""
+    document.getElementById('navigate-bnt-back').title = "Certificates_CyberSec_ComptiaA"
     
  }
  

@@ -557,6 +557,9 @@ width: 60%;
     font-size: 100%;
     white-space: nowrap;
 }
+#DownloadCertText:hover{
+    cursor: pointer;
+}
 .RenderApp-link{
     color: black;
     text-decoration: none;
