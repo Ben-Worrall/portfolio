@@ -6,10 +6,28 @@ import RatingClients_ReadMe from '../fileExplorer/functions/Projects-Developemen
 import Doors98_ReadMe from '../fileExplorer/functions/Projects-Developement/Door98-ReadMe';
 import RateTheSkin_ReadMe from '../fileExplorer/functions/Projects-Developement/RateTheSkin-ReadMe';
 import SkySurfer_ReadMe from '../fileExplorer/functions/Projects-Developement/SkySurfer-ReadMe';
+import Image1 from "../../assets/ComptiaA+11.png"
 
 function Homescreen (){
 
 
+
+
+
+
+function preloadImage (src) {
+  return new Promise((resolve, reject) => {
+    const img = new Image()
+    img.onload = function() {
+      resolve(img)
+    }
+    img.onerror = img.onabort = function() {
+      reject(src)
+    }
+    img.src = src
+  })
+}
+preloadImage (Image1)
 
 
 
