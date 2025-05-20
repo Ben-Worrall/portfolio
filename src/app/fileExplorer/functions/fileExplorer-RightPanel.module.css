@@ -1,0 +1,37 @@
+.folderHolder{
+    width: 100%;
+    height: 8%;
+    
+}
+
+.folderIcon{
+    background-image: url("/src/assets/icons/folder-img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 4%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.folderText{
+    float: left;
+    width: 52.5%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5%;
+    height: 100%;
+}
+.folderType{
+    float: right;
+    width: 35.5%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#RightPanelPortfolioSubfoldersCertificationsholder{
+    width: 100%;
+    
+}

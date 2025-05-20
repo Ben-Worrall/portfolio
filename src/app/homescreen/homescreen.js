@@ -346,6 +346,11 @@ document.ontouchstart = filter;
     document.getElementById('ReadMe-TopBar-URL-RatingClients').style.display = "none"
 
     document.getElementById('ReadMe-App').style.display = "none"
+
+    document.getElementById('fileExplorer').style.display = ""
+    document.getElementById('FileExplorer-App').style.display = ""
+    //setEnabled(true)
+    document.getElementById('FileExplorer-App').style.pointerEvents = "auto"
   }
 
 

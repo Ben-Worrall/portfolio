@@ -86,7 +86,7 @@
 }
 #RightPanel-Portfolio-Subfolders-Certifications-holder{
     width: 100%;
-    height: 33%;
+    
 }
 #RightPanel-Portfolio-Subfolders-Certifications-icon{
     background-image: url("/src/assets/icons/folder-img.png");
@@ -118,7 +118,7 @@
 
 #RightPanel-Portfolio-Subfolders-Projects-holder{
     width: 100%;
-    height: 33%;
+    
     margin-top: 0.3333333%;
 }
 #RightPanel-Portfolio-Subfolders-Projects-icon{
@@ -151,7 +151,7 @@
 
 #RightPanel-Portfolio-Subfolders-AboutMe-holder{
     width: 100%;
-    height: 33%;
+    
     margin-top: 0.33333333333%;
 }
 #RightPanel-Portfolio-Subfolders-AboutMe-icon{
@@ -339,7 +339,7 @@
 #RightPanel-Portfolio-Subfolders-holder{
     font-weight: bold;
     width: 100%;
-    height: 24%;
+    height: 100%;
     margin-top: 0.5%;
 }
 
