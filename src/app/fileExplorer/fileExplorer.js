@@ -719,7 +719,7 @@ const FileExplorer = () => {
                     </div>
 
                     <div class='top-panel-item'>
-                        <a class='top-panel-link' target="_blank" href=''>
+                        <a class='top-panel-link' target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLSeGMWihFYKpk7J1qOLUxcygIPFqp27Nv2AbbUyg5pUpNgoSCg/viewform?usp=dialog'>
                             <u>E</u>mail_me
                         </a>
                     </div>
