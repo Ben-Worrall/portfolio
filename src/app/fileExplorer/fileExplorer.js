@@ -161,11 +161,14 @@ const FileExplorer = () => {
             document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
             document.getElementById('Projects-Developement-Doors98').style.display = "none"
             document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
+
+            document.getElementById('Certificates-CyberSec').style.display = "none"
+
+            document.getElementById('navigate-bnt-back').title = "Certifications"
         })
 
         //--------------------------------------------------------------------------------//
-
-            //cyber sec
+        //projects, dev
                 document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').addEventListener('click', function(){
                 document.getElementById('Projects-Developement').style.display = ""
                 document.getElementById('Projects').style.display = "none"
@@ -183,29 +186,30 @@ const FileExplorer = () => {
     
             })
 
-
-
         //--------------------------------------------------------------------------------//
 
-            //dev
+            //projects, cyber
 
 
         //--------------------------------------------------------------------------------//
 
         //projects
-        document.getElementById('LeftPanel-Body-ThirdLayer-Projects-holder').addEventListener('click', function(){
-            document.getElementById('Projects').style.display = ""
-            document.getElementById('Desktop').style.display = "none"
-            document.getElementById('BenW').style.display = "none"
-            document.getElementById('Portfolio').style.display = "none"
-            document.getElementById('Certifications').style.display = "none"
-            document.getElementById('AboutMe').style.display = "none"
+        document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').addEventListener('click', function(){
+            document.getElementById('Certificates-CyberSec').style.display = ""
+                document.getElementById('Projects').style.display = "none"
+                document.getElementById('Desktop').style.display = "none"
+                document.getElementById('BenW').style.display = "none"
+                document.getElementById('Portfolio').style.display = "none"
+                document.getElementById('Certifications').style.display = "none"
+                document.getElementById('AboutMe').style.display = "none"
+                document.getElementById('Projects-Developement').style.display = "none"
 
-             document.getElementById('Projects-Developement').style.display = "none"
-             document.getElementById('Projects-Developement-RatingClients').style.display = "none"
-            document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
-            document.getElementById('Projects-Developement-Doors98').style.display = "none"
-            document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
+                document.getElementById('Projects-Developement-RatingClients').style.display = "none"
+                document.getElementById('Projects-Developement-SkySurfer').style.display = "none"
+                document.getElementById('Projects-Developement-Doors98').style.display = "none"
+                document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
+
+                document.getElementById('navigate-bnt-back').title = "Certificates-CyberSec"
         })
 
         //--------------------------------------------------------------------------------//
@@ -215,6 +219,7 @@ const FileExplorer = () => {
             //dev
             document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').addEventListener('click', function(){
                 document.getElementById('Projects-Developement').style.display = ""
+                document.getElementById('Certificates-CyberSec').style.display = "none"
                 document.getElementById('Projects').style.display = "none"
                 document.getElementById('Desktop').style.display = "none"
                 document.getElementById('BenW').style.display = "none"
@@ -228,6 +233,7 @@ const FileExplorer = () => {
                 document.getElementById('Projects-Developement-Doors98').style.display = "none"
                 document.getElementById('Projects-Developement-RateTheSkin').style.display = "none"
     
+                document.getElementById('navigate-bnt-back').title = "Projects-Developement"
             })
 
 
@@ -373,6 +379,10 @@ const FileExplorer = () => {
                         if(e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder" &&  e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-Developement-text" && e.target.id !== "LeftPanel-FourthLayer-Projects-subfolder-Developement-icon"){
                             DefaultProjectsDev()
                         }
+                        //cert, cyber  
+                         //if(e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder" &&  e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-text" && e.target.id !== "LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-icon"){
+                            //DefaultProjectsDev()
+                        //}
 
         }
         
@@ -530,8 +540,8 @@ const FileExplorer = () => {
         document.getElementById('fileExplorer-text').innerText = "Exploring - About Me.txt"
     })
 
-
-    //Certifications (4th layer)
+     
+    //Certifications (4th layer)_________________________
     //Cyber Sec
     document.getElementById('LeftPanel-FourthLayer-Certifications-subfolder-CyberSec-Folder').addEventListener('click', function(){
         //change style
@@ -559,7 +569,7 @@ const FileExplorer = () => {
     
 
 
-    //Projects (4th layer)
+    //Projects (4th layer)________________________________
     //cyber sec
     document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-CyberSec-Folder').addEventListener('click', function(){
         //change style
@@ -576,6 +586,7 @@ const FileExplorer = () => {
     //Dev
     document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').addEventListener('click', function(){
         //change style
+        console.log(document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder'))
         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.backgroundColor = 'blue'
         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.color = 'white'
         document.getElementById('LeftPanel-FourthLayer-Projects-subfolder-Developement-Folder').style.outline = '0.2vw solid black '
@@ -656,7 +667,7 @@ const FileExplorer = () => {
                 test = true
                 
             }
-            if(document.getElementById('navigate-bnt-back').title == "Certifications-CyberSec"){
+            if(document.getElementById('navigate-bnt-back').title == "Certificates-CyberSec"){
                 console.log('check portfolio')
                
                 
@@ -671,7 +682,7 @@ const FileExplorer = () => {
         
                 document.getElementById('Certificates-CyberSec').style.display = ""
                 document.getElementById('Certificates_CyberSec_ComptiaA').style.display = "none"
-                document.getElementById('navigate-bnt-back').title = "Certifications-CyberSec"
+                document.getElementById('navigate-bnt-back').title = "Certificates-CyberSec"
                 test = true
                 
             }

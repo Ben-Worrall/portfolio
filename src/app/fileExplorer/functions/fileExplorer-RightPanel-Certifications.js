@@ -40,7 +40,7 @@ const fileExplorer_RightPanel_Certifications = () => {
     
     document.getElementById('Certificates-CyberSec').style.display = ""
     document.getElementById('Certifications').style.display = "none"
-    document.getElementById('navigate-bnt-back').title = "Certifications-CyberSec";
+    document.getElementById('navigate-bnt-back').title = "Certificates-CyberSec";
 
  }
 

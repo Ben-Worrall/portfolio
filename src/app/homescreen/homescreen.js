@@ -30,7 +30,7 @@ function preloadImage (src) {
 preloadImage (Image1)
 
 
-
+/*
  const [enabled, setEnabled] = useState(true); // Toggle control
   
   useEffect(() => {
@@ -323,7 +323,7 @@ document.ontouchstart = filter;
 
 
 
-    
+    */
 
 
 
